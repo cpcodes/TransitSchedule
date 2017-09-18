@@ -1,0 +1,101 @@
+<body copyright="All data copyright North County Transit District 2013.">
+<predictions stopTitle="Coaster Oceanside Transit Center" stopTag="28000" dirTitleBecauseNoPredictions="San Diego"></predictions>
+<predictions stopTitle="Coaster Oceanside Transit Center" stopTag="28000_ar" dirTitleBecauseNoPredictions="Oceanside"></predictions>
+<predictions stopTitle="Coaster Carlsbad Village Station" stopTag="28001" dirTitleBecauseNoPredictions="San Diego"></predictions>
+<predictions stopTitle="Coaster Carlsbad Poinsettia Station" stopTag="28002">
+<direction title="Oceanside">
+<prediction epochTime="1367021704135" seconds="5437" minutes="90" isDeparture="false" dirTag="398_0_var0" block="39804" tripTag="9374327"/>
+</direction>
+</predictions>
+<predictions stopTitle="Coaster Encinitas Station" stopTag="28003">
+<direction title="Oceanside">
+<prediction epochTime="1367021267786" seconds="5000" minutes="83" isDeparture="false" dirTag="398_0_var0" block="39804" tripTag="9374327"/>
+</direction>
+</predictions>
+<predictions stopTitle="Coaster Solana Beach Station" stopTag="28004">
+<direction title="Oceanside">
+<prediction epochTime="1367020917097" seconds="4650" minutes="77" isDeparture="false" dirTag="398_0_var0" block="39804" tripTag="9374327"/>
+</direction>
+</predictions>
+<predictions stopTitle="Coaster Sorrento Valley Station" stopTag="28005">
+<direction title="Oceanside">
+<prediction epochTime="1367019633498" seconds="3366" minutes="56" isDeparture="false" dirTag="398_0_var0" block="39804" tripTag="9374327"/>
+<prediction epochTime="1367022153498" seconds="5886" minutes="98" isDeparture="false" dirTag="398_0_var0" block="39801" tripTag="9374328"/>
+</direction>
+</predictions>
+<predictions stopTitle="Coaster Old Town Station" stopTag="28006">
+<direction title="Oceanside">
+<prediction epochTime="1367016879549" seconds="612"  minutes="10" isDeparture="false" dirTag="398_0_var0" block="39804" tripTag="9374327"/>
+<prediction epochTime="1367019399549" seconds="3132" minutes="52" isDeparture="false" dirTag="398_0_var0" block="39801" tripTag="9374328"/>
+</direction>
+</predictions>
+<predictions stopTitle="Coaster Santa Fe Station" stopTag="28007">
+<direction title="Oceanside">
+<prediction epochTime="1367016300000" seconds="33"   minutes="0"  isDeparture="true" dirTag="398_0_var0" block="39804" tripTag="9374327"/>
+<prediction epochTime="1367018820000" seconds="2553" minutes="42" isDeparture="true" dirTag="398_0_var0" block="39801" tripTag="9374328"/>
+</direction>
+</predictions>
+</body>
+
+<body copyright="All data copyright North County Transit District 2013.">
+<predictions stopTitle="Coaster Oceanside Transit Center" stopTag="28000">
+<direction title="San Diego">
+<prediction epochTime="1367021055233" seconds="3143" minutes="52" isDeparture="true" dirTag="398_1_var0" block="39804" tripTag="9374320"/>
+</direction>
+</predictions>
+<predictions stopTitle="Coaster Oceanside Transit Center" stopTag="28000_ar">
+<direction title="Oceanside">
+<prediction epochTime="1367021055084" seconds="3142" minutes="52" isDeparture="false" dirTag="398_0_var0" block="39804" tripTag="9374327"/>
+</direction>
+</predictions>
+<predictions stopTitle="Coaster Carlsbad Village Station" stopTag="28001">
+<direction title="San Diego">
+<prediction epochTime="1367021354242" seconds="3442" minutes="57" isDeparture="false" dirTag="398_1_var0" block="39804" tripTag="9374320"/>
+</direction>
+<direction title="Oceanside">
+<prediction epochTime="1367020722745" seconds="2810" minutes="46" isDeparture="false" dirTag="398_0_var0" block="39804" tripTag="9374327"/>
+</direction>
+</predictions>
+<predictions stopTitle="Coaster Carlsbad Poinsettia Station" stopTag="28002">
+<direction title="San Diego">
+<prediction epochTime="1367022084291" seconds="4172" minutes="69" isDeparture="false" dirTag="398_1_var0" block="39804" tripTag="9374320"/>
+</direction>
+<direction title="Oceanside">
+<prediction epochTime="1367019992796" seconds="2080" minutes="34" isDeparture="false" dirTag="398_0_var0" block="39804" tripTag="9374327"/>
+</direction>
+</predictions>
+<predictions stopTitle="Coaster Encinitas Station" stopTag="28003">
+<direction title="San Diego">
+<prediction epochTime="1367022458829" seconds="4546" minutes="75" isDeparture="false" dirTag="398_1_var0" block="39804" tripTag="9374320"/>
+</direction>
+<direction title="Oceanside">
+<prediction epochTime="1367019556447" seconds="1644" minutes="27" isDeparture="false" dirTag="398_0_var0" block="39804" tripTag="9374327"/>
+<prediction epochTime="1367023787786" seconds="5875" minutes="97" isDeparture="false" dirTag="398_0_var0" block="39801" tripTag="9374328"/>
+</direction>
+</predictions>
+<predictions stopTitle="Coaster Solana Beach Station" stopTag="28004">
+<direction title="San Diego">
+<prediction epochTime="1367022790278" seconds="4878" minutes="81" isDeparture="false" dirTag="398_1_var0" block="39804" tripTag="9374320"/>
+</direction>
+<direction title="Oceanside">
+<prediction epochTime="1367019205758" seconds="1293" minutes="21" isDeparture="false" dirTag="398_0_var0" block="39804" tripTag="9374327"/>
+<prediction epochTime="1367023437097" seconds="5524" minutes="92" isDeparture="false" dirTag="398_0_var0" block="39801" tripTag="9374328"/>
+</direction>
+</predictions>
+<predictions stopTitle="Coaster Sorrento Valley Station" stopTag="28005">
+<direction title="Oceanside">
+<prediction epochTime="1367017922159" seconds="10" minutes="0" isDeparture="false" dirTag="398_0_var0" block="39804" tripTag="9374327"/>
+<prediction epochTime="1367022153498" seconds="4241" minutes="70" isDeparture="false" dirTag="398_0_var0" block="39801" tripTag="9374328"/>
+</direction>
+</predictions>
+<predictions stopTitle="Coaster Old Town Station" stopTag="28006">
+<direction title="Oceanside">
+<prediction epochTime="1367019399549" seconds="1487" minutes="24" isDeparture="false" dirTag="398_0_var0" block="39801" tripTag="9374328"/>
+</direction>
+</predictions>
+<predictions stopTitle="Coaster Santa Fe Station" stopTag="28007">
+<direction title="Oceanside">
+<prediction epochTime="1367018820000" seconds="907" minutes="15" isDeparture="true" dirTag="398_0_var0" block="39801" tripTag="9374328"/>
+</direction>
+</predictions>
+</body>

@@ -1,0 +1,285 @@
+-- x "h:\My Documents\Visual Studio 2010\Projects\NextBusDisplay\Documentation\NextBusDisplayNotes.document"
+-- x "h:\My Documents\Visual Studio 2010\Projects\NextBusDisplay\Documentation\NextBusDisplay.dir"
+
+Debug Web Site: C:\WebApplications\NextBusDisplay
+Sandbox Web Site: \\tnctdgaov11\c$\inetpub\wwwroot\NextBusDisplay
+Live: \\nctdgaov77
+Interim Live:   \\nctdgaov77\d$\NextBusDisplayExecutables
+
+To Do:
+    -- x "h:\My Documents\Visual Studio 2010\Projects\NextBusDisplay\NextBusDisplay\Admin.aspx"
+    -- x "h:\My Documents\Visual Studio 2010\Projects\NextBusDisplay\NextBusDisplay\Admin.aspx.cs"
+    -- x "h:\My Documents\Visual Studio 2010\Projects\NextBusDisplay\NextBusDisplay\Admin.aspx.designer.cs"
+-- 398 28000 - Coaster Oceanside Transit Center
+-- 399 27000 - Sprinter Oceanside Transit Center
+--  TODO: Add A Platform Edit Page - (Grid By Train)                        x "\\NCTD2k.local\Home\Users\dvroman\My Documents\Visual Studio 2012\Projects\NextBusDisplay\Admin.aspx.cs"#:16
+    http://forums.asp.net/t/1793260.aspx/1                                                                  How to set LINQ resultset as DataSource in a gridview in ASP.NET
+    http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.gridview.updaterow.aspx               GridView.UpdateRow Method
+    http://stackoverflow.com/questions/12301902/add-row-to-gridview-in-visual-basic                         Add row to gridview in Visual Basic
+    http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.updatemethod.aspx    ObjectDataSource.UpdateMethod Property
+    http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.objectdatasource.insertmethod.aspx    ObjectDataSource.InsertMethod Property
+    http://documentation.devexpress.com/#WindowsForms/CustomDocument1082                                    Posting Data to a Connected Database
+    http://geekswithblogs.net/casualjim/archive/2006/05/04/77151.aspx                                       Adding insert capabilities to the gridview
+    http://geekswithblogs.net/casualjim/articles/51360.aspx                                                 Adding an insert row to GridView
+    http://www.codeproject.com/Questions/380201/Add-new-row-to-GridView-on-each-button-Click                Add new row to GridView on each button-Click
+    http://revenmerchantservices.com/page/gridview-add-new-row.aspx                                         gridview add new row
+    http://www.planet-source-code.com/vb/scripts/ShowCode.asp?txtCodeId=8458&lngWId=10                      Bind GridView to Data Access Layer (DAL)
+    http://msdn.microsoft.com/en-us/library/fkx0cy6d.aspx                                                   GridView.DataBind Method
+--  TODO - Add The Special ServiceNoticeID Indicator.                       x "\\NCTD2k.local\Home\Users\dvroman\My Documents\Visual Studio 2012\Projects\NextBusDisplay\WebService1.asmx.cs"#:304
+--  TODO - This location would also need to be aware of the ServiceNoticeID x "\\NCTD2k.local\Home\Users\dvroman\My Documents\Visual Studio 2012\Projects\NextBusDisplay\WebService1.asmx.cs"#:419
+--  TODO: Dump the XML input to a folder. See: h:\My Documents\Visual Studio 2012\Projects\RiderReportWeb\FileUpload.aspx.cs    x "\\NCTD2k.local\Home\Users\dvroman\My Documents\Visual Studio 2012\Projects\NextBusDisplay\WebService1.asmx.cs"#:58
+
+
+(4) New Report showing Schedule Data In The Database See RiderReportReport
+    BusSchedulesReport
+    < Sprinter >
+    < Coaster >
+SELECT CASE o.Route WHEN 399 THEN '399 - Coaster'
+                    WHEN 398 THEN '398 - Sprinter'
+                    ELSE CAST(o.Route AS VARCHAR) END AS [Route],
+       o.Stop + ' - ' + s.Description AS [Stop],
+       o.Platform,
+       o.UseNextBusFeed
+FROM PlatformOverride o
+    INNER JOIN StopDisplay s ON o.Stop = s.StopID
+ORDER BY o.Route
+    --  NO Save The XML as files -- &&&&&& <??? " Should there be an auto off or manual off feature? "  ???> &&&&&&&&&& -- a.  Thinking that the file be saved as a guid file name .xml in a special folder b.  Add the on/off to the Admin Page
+See:
+x "h:\My Documents\Visual Studio 2012\Projects\RiderReportWeb\FileUpload.aspx.cs"
+
+<done>(3) Add Capability To Auto Restore Default Platform After The Next Schedule Time For That Stop
+http://localhost:2448/Default.aspx?stops=399,27000-398,28000-Metrolink-Amtrak
+http://localhost:2448/Admin.aspx
+http://nctdgaov77.nctd2k.local:10067/Default.aspx?stops=399,27000-398,28000-Metrolink-Amtrak
+http://nctdgaov77.nctd2k.local:10067/Admin.aspx
+
+Error   1   Cannot implicitly convert type 'System.Linq.IQueryable<string>' to 'System.Collections.Generic.List<string>'. An explicit conversion exists (are you missing a cast?)   \\NCTD2k\Home\Users\dvroman\My Documents\Visual Studio 2010\Projects\NextBusDisplay\NextBusDisplay\Admin.aspx.cs    180 24  NextBusDisplay
+
+private List<PlatformOverride> GetAllPlatformDisplays() - dc.sp_PlatformOverride(); Updates The Platform Override To "As Scheduled" After The [OverrideUntil] has expired.
+
+string DefaultSelect = "As Scheduled";
+    [OverrideUntil] [smalldatetime] NOT NULL,
+private List<PlatformOverride> GetAllPlatformDisplays()
+{
+    try
+    {
+        DataClasses1DataContext dc = new DataClasses1DataContext();
+         var results = dc.sp_PlatformOverride();
+         return results.ToList();
+         // var results = from z in dc.PlatformOverrides
+         //              orderby z.Route
+         //              select z;
+         // return results.ToList();
+    }
+    catch
+    {
+        // Return A Single Standard Override (398, 28000, As Scheduled)
+        // List<string> result = new List<string>("Route=398, Stop=28000, Platform=As Scheduled");
+        // this will happen when the SQL is down
+
+        // return null;
+        // Recurse This Function Until It Returns A Value
+        return GetAllPlatformDisplays();
+    }
+}
+
+(1) Modify The Admin Display To Show The String Not The ID. i.e 398 s.b. Sprinter and 399 s.b. Coaster or vica versa.
+        <????> CASE or INNER JOIN
+            // SELECT PlatformOverrideId, Route, Stop, Platform, UseNextBusFeed  FROM PlatformOverrides ORDER BY Route
+            var results = from z in dc.PlatformOverrides
+                          join s dc.StopDisplay on z.Stop equals s.StopID
+                          orderby z.Route
+                          select z;
+
+SELECT CASE o.Route WHEN 399 THEN '399 - Coaster'
+                    WHEN 398 THEN '398 - Sprinter'
+                    ELSE CAST(o.Route AS VARCHAR) END AS [Route],
+       o.Stop + ' - ' + s.Description AS [Stop],
+       o.Platform,
+       o.UseNextBusFeed
+FROM PlatformOverride o
+    INNER JOIN StopDisplay s ON o.Stop = s.StopID
+ORDER BY o.Route
+-- OR http://stackoverflow.com/questions/37324/what-is-the-syntax-for-an-inner-join-in-linq-to-sql
+SELECT o.Route,
+       o.Stop,
+       s.Description AS [Stop_Descr],
+       o.Platform,
+       o.UseNextBusFeed
+FROM PlatformOverride o
+    INNER JOIN StopDisplay s ON o.Stop = s.StopID
+ORDER BY o.Route
+-- OR
+SELECT o.Route,
+       o.Stop,
+       (SELECT Description FROM StopDisplay WHERE o.Stop = StopID) AS [Stop_Descr],
+       o.Platform,
+       o.UseNextBusFeed
+FROM PlatformOverride o
+ORDER BY o.Route
+
+private List<StopCharacteristics> GetStopCharacteristics(string id)
+{
+    // SELECT TOP 1 * FROM StopDisplay z WHERE z.StopID = id
+    var results = from z in dc.StopDisplay
+                  where z.StopID == id
+                  select z.Description;
+    return results.First();
+}
+private PlatformOverride GetPlatformOverride(int id)
+{
+    // SELECT TOP 1 * FROM PlatformOverrides z WHERE z.PlatformOverrideId = id
+    var results = from z in dc.PlatformOverrides
+                  where z.PlatformOverrideId == id
+                  select z;
+
+    return results.First();  // TOP 1
+}
+private List<PlatformOverride> GetAllPlatformDisplays()
+{
+    try
+    {
+        DataClasses1DataContext dc = new DataClasses1DataContext();
+        var results = from z in dc.PlatformOverrides
+                      orderby z.Route
+                      select z;
+
+        return results.ToList();
+    }
+    catch
+    {
+        // Return A Single Standard Override (398, 28000, As Scheduled)
+        // List<string> result = new List<string>("Route=398, Stop=28000, Platform=As Scheduled");
+        // this will happen when the SQL is down
+
+        return null;
+        // return result;
+    }
+}
+
+(2) Modify The Admin Display For 399 To only Show The CheckBox With Appropriate Text.
+        void cb_CheckedChanged(object sender, EventArgs e)
+        private PlatformOverride GetPlatformOverride(int id)
+
+? po.Route.ToString() + " " + po.Stop.ToString() + " " + po.Platform.ToString()
+"398 28000 As Scheduled"
+ if (string.IsNullOrEmpty(schedule.Departure))
+ if (overrides != null)
+
+To find the proper agency tag use the command
+
+http://webservices.nextbus.com/service/publicXMLFeed?command=commandName&a=<agency tag>&additionParams...
+http://webservices.nextbus.com/service/publicXMLFeed?command=commandName&a=nctd&
+
+Command Name
+    Command "agencyList" - a list of agencies
+    http://webservices.nextbus.com/service/publicXMLFeed?command=agencyList
+        <agency tag="nctd" title="North County Transit District" shortTitle="NCTD" regionTitle="California-Southern" />
+
+    Command "routeList" - a list of routes for an agency
+http://webservices.nextbus.com/service/publicXMLFeed?command=routeList&a=nctd
+
+Command "routeConfig" - stop / route configuration and location
+http://webservices.nextbus.com/service/publicXMLFeed?command=routeConfig&a=nctd&r=398
+    h:\My Documents\Visual Studio 2010\Projects\NextBusDisplay\Documentation\RouteConfig399.xml
+    h:\My Documents\Visual Studio 2010\Projects\NextBusDisplay\Documentation\RouteConfig398.xml
+
+Command "predictions"
+(1) http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=<agency_tag>&stopId=<stop id>
+    http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=nctd&stopId=28006
+(2) http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=<agency_tag>&stopId=<stop id>&routeTag=<route tag>
+    http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=nctd&stopId=28006&r=398
+
+Command "schedule"
+    http://webservices.nextbus.com/service/publicXMLFeed?command=schedule&a=nctd&r=398
+
+Oceanside Transit Center Default URL
+http://localhost:2448/Default.aspx?stops=399,27000-398,28000-Metrolink-Amtrak
+
+Test URL Not Transit Center
+http://localhost:2448/Default.aspx?stops=399,27003-398,28003-Metrolink-Amtrak
+http://webservices.nextbus.com/service/publicXMLFeed?command=predictionsForMultiStops&a=nctd&stops=399|27000_ar&stops=399|27000&stops=398|28000_ar&stops=398|28000&stops=Metrolink|_ar&stops=Metrolink|
+<?xml version="1.0" encoding="utf-8" ?>
+<body copyright="All data copyright North County Transit District 2012.">
+<predictions agencyTitle="North County Transit District" routeTitle="Sprinter" routeTag="399" stopTitle="Sprinter Oceanside Transit Center" stopTag="27000_ar">
+<direction title="West to Oceanside">
+  <prediction epochTime="1356569659036" seconds="1264" minutes="21" isDeparture="false" dirTag="399_1_var0" vehicle="Sprinter-4002A" block="39903_14" tripTag="8919357" />
+  <prediction epochTime="1356571569294" seconds="3174" minutes="52" isDeparture="false" affectedByLayover="true" dirTag="399_1_var0" vehicle="virtualVehicle_39904_14" block="39904_14" tripTag="8919358" />
+  <prediction epochTime="1356573369294" seconds="4974" minutes="82" isDeparture="false" affectedByLayover="true" dirTag="399_1_var0" vehicle="virtualVehicle_39901_14" block="39901_14" tripTag="8919359" />
+</direction>
+</predictions>
+<predictions agencyTitle="North County Transit District" routeTitle="Sprinter" routeTag="399" stopTitle="Sprinter Oceanside Transit Center" stopTag="27000">
+<direction title="East to Escondido">
+  <prediction epochTime="1356570180000" seconds="1785" minutes="29" isDeparture="true" affectedByLayover="true" dirTag="399_0_var0" vehicle="virtualVehicle_39903_6" block="39903_6" tripTag="8919325" />
+</direction>
+</predictions>
+<predictions agencyTitle="North County Transit District" routeTitle="Coaster" routeTag="398" stopTitle="Coaster Oceanside Transit Center" stopTag="28000_ar">
+<direction title="North to Oceanside">
+  <prediction epochTime="1356569262699" seconds="868" minutes="14" isDeparture="false" dirTag="398_0_var0" vehicle="Coaster-3???" block="39804" tripTag="9054495" />
+  <prediction epochTime="1356573302071" seconds="4907" minutes="81" isDeparture="false" affectedByLayover="true" dirTag="398_0_var0" vehicle="Coaster-2101" block="39802" tripTag="9054497" />
+</direction>
+</predictions>
+<predictions agencyTitle="North County Transit District" routeTitle="Coaster" routeTag="398" stopTitle="Coaster Oceanside Transit Center" stopTag="28000">
+<direction title="South to San Diego">
+  <prediction epochTime="1356570240000" seconds="1845" minutes="30" isDeparture="true" affectedByLayover="true" dirTag="398_1_var0" vehicle="Coaster-3???" block="39804" tripTag="9054488" />
+</direction>
+</predictions>
+<Error shouldRetry="false">For agency=nctd route r=Metrolink is not currently available. It might be initializing still.</Error>
+<Error shouldRetry="false">For agency=nctd route r=Metrolink is not currently available. It might be initializing still.</Error>
+</body>
+
+        const string NEXTBUSFEED = "http://webservices.nextbus.com/service/publicXMLFeed?command=predictionsForMultiStops&a=nctd";
+private string BuildNextBusUrl()
+{
+    StringBuilder nextBusUrl = new StringBuilder(NEXTBUSFEED);
+
+    foreach (var schedule in schedules)
+    {
+        nextBusUrl.AppendFormat("&stops={0}|{1}&stops={0}|{2}", schedule.Route, schedule.Stop + "_ar", schedule.Stop);
+    }
+
+    return nextBusUrl.ToString();
+}
+http://webservices.nextbus.com/service/publicXMLFeed?command=predictionsForMultiStops&a=nctd&stops=399|27003&stops=399|27003_ar&stops=398|28003&stops=398|28003_ar
+399,27003-398,28003-Metrolink
+
+-- Web.config
+<connectionStrings>
+  -- <!-- SQLExpress On The Web / Development Server -->    http://stackoverflow.com/questions/1229691/difference-between-integrated-security-true-and-integrated-security-sspi
+  <add name="ApplicationServices" connectionString="data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnetdb.mdf;User Instance=true"
+    providerName="System.Data.SqlClient" />
+  -- <!-- Standard SQL Server -->
+  <add name="NextBusDisplayConnectionString" connectionString="Data Source=nctdgaov77;Initial Catalog=NextBusDisplay;Integrated Security=True"
+    providerName="System.Data.SqlClient" />
+</connectionStrings>
+
+TABLE   dbo.StopDisplay
+StaticTrainId       INT         NOT NULL IDENTITY   Primary Key
+Train               VARCHAR(50) NOT NULL
+Number              VARCHAR(50) NOT NULL
+Direction           VARCHAR(50) NOT NULL
+DepartTime          VARCHAR(50) NOT NULL
+Platform            VARCHAR(50) NOT NULL
+Days                VARCHAR(50) NOT NULL
+
+TABLE dbo.PlatformDisplay
+PlatformDisplayId   INT         NOT NULL IDENTITY   Primary Key
+Route               VARCHAR(50) NOT NULL
+Stop                VARCHAR(50) NOT NULL
+Platform            VARCHAR(50) NOT NULL
+
+TABLE dbo.PlatformOverride
+PlatformOverrideId  INT         NOT NULL IDENTITY   Primary Key
+Route               VARCHAR(50) NOT NULL
+Stop                VARCHAR(50) NOT NULL
+Platform            VARCHAR(50) NOT NULL
+UseNextBusFeed      BIT
+
+TABLE   dbo.StaticTrainOverride
+StaticTrainOverrideId   INT         NOT NULL IDENTITY   Primary Key
+StaticTrainId           INT         NOT NULL
+ShowSchedule            BIT         NOT NULL
+StartDateTime           DATETIME    NOT NULL
+EndDateTime             DATETIME    NOT NULL
+
+(4) <done> Add Logon/Password To The Admin Page

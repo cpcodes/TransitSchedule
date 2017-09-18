@@ -1,0 +1,18 @@
+SELECT [ID]
+      ,[Holiday]
+      ,[Description]
+      ,[DOW]
+  FROM [tblHoliDate]
+  ORDER BY [Description], Holiday
+
+-- The Only Holiday Schedule Days Are:
+Christmas Day
+Independence Day
+Labor Day
+Memorial Day
+New Year's Day
+Thanksgiving Day
+
+DELETE FROM [NextBusDisplay].[dbo].[tblHoliDate]
+WHERE Description IN ('Presidents'' Day', 'Cesar Chavez Day', 'Christmas Eve Day', 'Day After Thanksgiving Day', 'Martin Luther King Day', 'Veteran''s Day')
+

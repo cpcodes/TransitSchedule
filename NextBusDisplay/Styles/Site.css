@@ -1,0 +1,370 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body {
+    background: #000000;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+#logo {
+    height: 4em;
+    margin: 10px 10px;
+}
+
+a:link, a:visited {
+    color: #034af3;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #034af3;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 1.6em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2 {
+    margin-top: 0;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page {
+    width: 960px;
+    background-color: #fff;
+    margin: 20px auto 0 auto;
+    border: 1px solid #496077;
+}
+
+.header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: #4b6c9e;
+    width: 100%;
+}
+
+    .header h1 {
+        font-weight: 700;
+        margin: 0;
+        padding: 0 0 0 20px;
+        color: #f9f9f9;
+        border: none;
+        line-height: 2em;
+        font-size: 2em;
+    }
+
+.main {
+    padding: 0 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol {
+    padding: 6px 0;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer {
+    color: #4e5766;
+    padding: 8px 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+.hideSkiplink {
+    background-color: #3a4f63;
+    width: 100%;
+}
+
+div.menu {
+    padding: 4px 0 4px 8px;
+}
+
+    div.menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+
+        div.menu ul li a, div.menu ul li a:visited {
+            background-color: #465c71;
+            border: 1px #4e667d solid;
+            color: #dde4ec;
+            display: block;
+            line-height: 1.35em;
+            padding: 4px 20px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+            div.menu ul li a:hover {
+                background-color: #bfcbd6;
+                color: #465c71;
+                text-decoration: none;
+            }
+
+            div.menu ul li a:active {
+                background-color: #465c71;
+                color: #cfdbe6;
+                text-decoration: none;
+            }
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+    fieldset p {
+        margin: 2px 12px 10px 10px;
+    }
+
+.login label, .register label, .changePassword label {
+    display: block;
+}
+
+fieldset .inline {
+    display: inline;
+}
+
+legend {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+.textEntry {
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+.passwordEntry {
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+.accountInfo {
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear {
+    clear: both;
+}
+
+.title {
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+    .loginDisplay a:link {
+        color: white;
+    }
+
+    .loginDisplay a:visited {
+        color: white;
+    }
+
+    .loginDisplay a:hover {
+        color: white;
+    }
+
+.failureNotification {
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.submitButton {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.adminTable {
+    padding: 10px;
+    width: 100%;
+}
+
+.adminTable tr td {
+    font-size: 2em;
+    padding: 10px;
+    border-bottom: 10px solid black;
+}
+
+.PlatformOverrideDropdown {
+    font-size: 1.0em;
+    padding: 10px;
+    margin: 10px;
+}
+
+.CalendarDisplay {
+    font-size: 12px;
+}
+
+.ServiceNoticeStyle {
+    font-size: 32px;
+    font-family: Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.ScheduleTable table {
+    font-size: 4em
+}
+
+.ScheduleTable tr {
+    width: 33%
+}
+
+    .ScheduleTable tr:nth-child(even) {
+        background: #005daa
+    }
+
+    .ScheduleTable tr:nth-child(odd) {
+        background: #008c99
+    }
+
+.ScheduleTable th {
+    font-size: 4em;
+    background: #000000;
+    text-align: left;
+    font-weight: normal
+}
+
+.ScheduleTable td {
+    padding: .5em 1em 0 1em;
+    font-size: 2em
+}
+
+.ScheduleTable img {
+    width: 100%
+}
+
+.Delayed {
+    color: #880099;
+    font-size: 4em
+}
+
+.OnTime {
+    color: white;
+    font-size: 4em
+}
+
+.ArrivalMessage {
+    font-size: .5em;
+    color: Orange;
+    display: none
+}
+
+.DepartureMessage {
+    font-size: 1em;
+    color: Orange;
+    display: none
+}
+
+.Platform {
+    color: white;
+    font-size: 2em
+}
+
+.StopTitle {
+    font-size: 1em;
+    display: none
+}
+
+.LogoMessage {
+    font-size: 1em;
+    line-height: 1em;
+    display: none
+}
+
+.HeaderTable {
+    font-size: 2em;
+}
+
+.NCTDLogo {
+    width: 800px
+}
+
+.ClockText {
+    font-size: 4em;
+    color: #ffffff;
+    text-align: right
+}

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="NextBusDisplay" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=tnctdgaov11;Initial Catalog=NextBusDisplay;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="NextBusDisplayConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.StopDisplay" Member="StopDisplays">
+    <Type Name="StopDisplay">
+      <Column Name="StopNumber" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Show" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Platform" Type="System.Int32" DbType="INT" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="varchar(50)" CanBeNull="false" />
+      <Column Name="StopID" Type="System.String" DbType="VARCHAR(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StaticTrains" Member="StaticTrains">
+    <Type Name="StaticTrain">
+      <Column Name="StaticTrainId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Train" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Number" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Direction" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DepartTime" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Platform" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Days" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="StopID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TrainID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BlockID" Type="System.String" DbType="VARCHAR(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PlatformDisplay" Member="PlatformDisplays">
+    <Type Name="PlatformDisplay">
+      <Column Name="PlatformDisplayId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Route" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Stop" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Platform" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PlatformOverride" Member="PlatformOverrides">
+    <Type Name="PlatformOverride" Id="ID1">
+      <Column Name="PlatformOverrideId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Route" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Stop" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Platform" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UseNextBusFeed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OverrideUntil" Type="System.DateTime" DbType="SMALLDATETIME" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StaticTrainOverride" Member="StaticTrainOverrides">
+    <Type Name="StaticTrainOverride">
+      <Column Name="StaticTrainOverrideId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StaticTrainId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ShowSchedule" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="StartDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblHoliDate" Member="Holidays">
+    <Type Name="Holidays">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Holiday" Type="System.DateTime" DbType="DATE NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VARCHAR(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ServiceNotice" Member="ServiceNotices">
+    <Type Name="ServiceNotices">
+      <Column Name="AutoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ServiceNoticeID" Type="System.String" DbType="VARCHAR(20) NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayText" Type="System.String" DbType="VARCHAR(8000)  NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayFrom" Type="System.DateTime" DbType="DATE NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayTo" Type="System.DateTime" DbType=" DATE NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_PlatformOverride" Method="sp_PlatformOverride">
+    <ElementType IdRef="ID1" />
+  </Function>
+</Database>

@@ -1,0 +1,120 @@
+<html><head><title>
+</title>
+<style type="text/css">
+body
+{
+	font-size: 14px;
+	color: white;
+	font-family: Arial, Tahoma, Helvetica, Verdana;
+	background-color: black;
+}
+.note { font-size: 16px; color: black; font-family: Tahoma,Arial,Helvetica,Verdana; background-color: #ffffff;
+    BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid;
+    PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px; margin-left: 12pt; }
+.results { font-size: 16px; color: black; font-family: Consolas, "Courier New", Courier, Monospace; background-color: #cceeff;
+    BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid;
+    PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px; WIDTH: 95%; margin-left: 12pt; }
+code { COLOR: black; FONT-FAMILY: Consolas, "Courier New", Courier, Monospace; font-size: 16px; font-weight: bold; background-color: #eeeeee;  }
+.cs, .cs pre { font-size: 16px; color: black; font-family: Consolas, "Courier New", Courier, Monospace;
+    background-color: #eeeeff; WIDTH: 95%; margin-left: 16pt; WIDTH: 95%;
+    BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid;
+    PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px; }
+.cs pre { margin: 0em; }
+.cs .rem { color: #008000; }
+.cs .kwrd { color: #0000ff; }
+.cs .str { color: darkred; }
+.cs .err { color: red; font-weight: bold; }
+.cs .op { color: #0000c0; }
+.cs .preproc { color: #cc6633; }
+.cs .asp { background-color: #ffff00; }
+.cs .html { color: #800000; }
+.cs .attr { color: #ff0000; }
+.cs .alt { background-color: #f4f4f4; width: 100%; margin: 0em; }
+.cs .lnum { color: #606060; }
+.alt { background-color: #f4f4f4; }
+.asp { background-color: #ffff00; }
+</style>
+</head>
+<body>
+	<!-- Page Data Table Header -->
+<h1 style="font-size: 4em; color: blue;">
+Oceanside Transit Center
+</h1>
+	<table width='100%' cellspacing='0'>
+		<col width='34%' /><colgroup span='2' width='33%' />
+		<tr><td><div style='font-size: 2em'>Route / Stop</div></td>
+			<td><div style='font-size: 2em'>Next Vehicle Departure Time</div></td>
+			<td><div style='font-size: 2em'>Scheduled Platform</div></td>
+		</tr>
+	</table>
+<hr>
+<h1 style="font-size: 4em; color: blue;">
+All Other Stops
+</h1>
+	<table width="100%" cellspacing="0">
+		<col width="34%" /><colgroup span="2" width="33%" />
+		<tr>
+			<td><div style="font-size: 2em">Route / Stop</div></td>
+			<td><div style="font-size:2em">Next Vehicle Arrival Time</div></td>
+			<td><div style="font-size: 2em">Next Vehicle Departure Time</div></td>
+		</tr>
+	</table>
+<div class="note">
+
+<a href="http://webservices.nextbus.com/service/publicXMLFeed?command=predictionsForMultiStops&a=nctd&stops=399|27001" target=_blank>SPRINTER Coast Hwy Station (399|27001) </a><br>
+http://webservices.nextbus.com/service/publicXMLFeed?command=predictionsForMultiStops&a=nctd&stops=399|27001
+<!-- code formatted by http://manoli.net/csharpformat/ -->
+<pre class="cs">
+<span class="kwrd">&lt;?</span><span class="html">xml</span> <span class="attr">version</span><span class="kwrd">="1.0"</span> <span class="attr">encoding</span><span class="kwrd">="utf-8"</span> ?<span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">body</span> <span class="attr">copyright</span><span class="kwrd">="All data copyright North County Transit District 2013."</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">predictions</span> <span class="attr">agencyTitle</span><span class="kwrd">="North County Transit District"</span> <span class="attr">routeTitle</span><span class="kwrd">="Sprinter"</span> <span class="attr">routeTag</span><span class="kwrd">="399"</span> <span class="attr">stopTitle</span><span class="kwrd">="SPRINTER Coast Hwy Station"</span> <span class="attr">stopTag</span><span class="kwrd">="27001"</span><span class="kwrd">&gt;</span>
+  <span class="kwrd">&lt;</span><span class="html">direction</span> <span class="attr">title</span><span class="kwrd">="Oceanside"</span><span class="kwrd">&gt;</span>
+  <span class="kwrd">&lt;</span><span class="html">prediction</span> <span class="attr">epochTime</span><span class="kwrd">="1366923503986"</span> <span class="attr">seconds</span><span class="kwrd">="210"</span> <span class="attr">minutes</span><span class="kwrd">="3"</span> <span class="attr">isDeparture</span><span class="kwrd">="false"</span> <span class="attr">dirTag</span><span class="kwrd">="399_1_var0"</span> <span class="attr">vehicle</span><span class="kwrd">="Sprinter-4002A"</span> <span class="attr">block</span><span class="kwrd">="39901_12"</span> <span class="attr">tripTag</span><span class="kwrd">="9356947"</span> <span class="kwrd">/&gt;</span>
+  <span class="kwrd">&lt;</span><span class="html">prediction</span> <span class="attr">epochTime</span><span class="kwrd">="1366927576086"</span> <span class="attr">seconds</span><span class="kwrd">="4282"</span> <span class="attr">minutes</span><span class="kwrd">="71"</span> <span class="attr">isDeparture</span><span class="kwrd">="false"</span> <span class="attr">affectedByLayover</span><span class="kwrd">="true"</span> <span class="attr">dirTag</span><span class="kwrd">="399_1_var0"</span> <span class="attr">vehicle</span><span class="kwrd">="virtualVehicle_39903_13"</span> <span class="attr">block</span><span class="kwrd">="39903_13"</span> <span class="attr">tripTag</span><span class="kwrd">="9356949"</span> <span class="kwrd">/&gt;</span>
+  <span class="kwrd">&lt;/</span><span class="html">direction</span><span class="kwrd">&gt;</span>
+  <span class="kwrd">&lt;</span><span class="html">direction</span> <span class="attr">title</span><span class="kwrd">="Escondido"</span><span class="kwrd">&gt;</span>
+  <span class="kwrd">&lt;</span><span class="html">prediction</span> <span class="attr">epochTime</span><span class="kwrd">="1366923943199"</span> <span class="attr">seconds</span><span class="kwrd">="649"</span> <span class="attr">minutes</span><span class="kwrd">="10"</span> <span class="attr">isDeparture</span><span class="kwrd">="false"</span> <span class="attr">affectedByLayover</span><span class="kwrd">="true"</span> <span class="attr">dirTag</span><span class="kwrd">="399_0_var0"</span> <span class="attr">vehicle</span><span class="kwrd">="virtualVehicle_39901_4"</span> <span class="attr">block</span><span class="kwrd">="39901_4"</span> <span class="attr">tripTag</span><span class="kwrd">="9356915"</span> <span class="kwrd">/&gt;</span>
+  <span class="kwrd">&lt;</span><span class="html">prediction</span> <span class="attr">epochTime</span><span class="kwrd">="1366925743199"</span> <span class="attr">seconds</span><span class="kwrd">="2449"</span> <span class="attr">minutes</span><span class="kwrd">="40"</span> <span class="attr">isDeparture</span><span class="kwrd">="false"</span> <span class="attr">affectedByLayover</span><span class="kwrd">="true"</span> <span class="attr">dirTag</span><span class="kwrd">="399_0_var0"</span> <span class="attr">vehicle</span><span class="kwrd">="virtualVehicle_39902_4"</span> <span class="attr">block</span><span class="kwrd">="39902_4"</span> <span class="attr">tripTag</span><span class="kwrd">="9356916"</span> <span class="kwrd">/&gt;</span>
+  <span class="kwrd">&lt;/</span><span class="html">direction</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">message</span> <span class="attr">text</span><span class="kwrd">="Sprinter service suspended after 03/08/13. See GoNCTD.com for more information."</span><span class="kwrd">/&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">predictions</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;/</span><span class="html">body</span><span class="kwrd">&gt;</span>
+</pre>
+<ul>
+<li><b>agencyTitle                 </b> (string) - The name of the agency to be displayed to passenger.</li>
+<li><b>routeTag                    </b> (string) - Identifier for the route.</li>
+<li><b>routeTitle                  </b> (string) - Title of the route to be displayed to passenger.</li>
+<li><b>stopTitle                   </b> (string) - Title of the route to be displayed to passenger.</li>
+<li><b>dirTitleBecauseNoPredictions</b> (string) - Title of direction. This attribute is only provided if there are no predictions.
+    The direction title is provided in this situation because no &lt;direction&gt; elements are available since there are no predictions.
+    This way the User Interface can still display the title of the direction selected even when there are no predictions.</li>
+
+<li><b> isDeparture         </b> (boolean) - For most stops predictions of when the bus will arrive are provided. But there are some stops,
+    especially stops at the beginning of a trip, where there is a layover. This means that the bus is stopped for at least several minutes.
+    For these situations the departure time is provided because a passenger is only interested in the departure time for such situations.
+<!--     Toronto TTC streetcars are an exception. At terminals arrival predictions are provided for TTC streetcars since they are managed more by headway instead of schedule. -->
+    In order to specify whether a prediction is for a departure as opposed to an arrival time the additional tag element <b>isDeparture</b> is provided along with the
+    predictions. If it is set to true then the prediction is for the departure time. Otherwise the prediction is for an arrival time.
+    For departures NextBus uses the schedule to determine when the vehicle will be leaving the stop if the vehicle is on-time or running early.
+    If the vehicle is running late then the departure time will be based on the vehicles arrival time (assuming that the vehicle will depart as soon as it arrives
+    without any layover).</li>
+<li><b> block               </b> (string) - Specifies the block number assigned to the vehicle as defined in the configuration data.</li>
+<li><b> <span class="asp">dirTag</span>              </b> (string) - Specifies the ID of the direction for the stop that the prediction is for (as opposed to the direction that the vehicle is currently on). The direction ID is usually the same as a trip pattern ID, but is very different from the tripTag. A direction or trip pattern ID specifies the configuration for a trip. It can be used multiple times for a block assignment. But a tripTag identifies a particular trip within a block assignment.
+<ul>
+<li>dirTag="398<b>_0</b>_var0" = Northbound (&lt;direction title="Oceanside"&gt;)</li>
+<li>dirTag="398<b>_1</b>_var0" = Southbound (&lt;direction title="San Diego"&gt;)</li>
+<li>dirTag="399<b>_0</b>_var0" = Eastbound (&lt;direction title="Escondido"&gt;)</li>
+<li>dirTag="399<b>_1</b>_var0" = Westbound (&lt;direction title="Oceanside"&gt;)</li>
+<li><code>"_0_"</code> = Inbound</li>
+<li><code>"_1_"</code> = Outbound</li>
+</ul>
+</li>
+<li><b> tripTag             </b> (string) - Specifies the ID of the trip for when the vehicle will be arriving at the stop, as defined in the configuration data. This element is only included in the XML feed if the trip ID is actually included in the configuration data.</li>
+<!-- <li><b> branch              </b> (string) - This attribute is provided only for the Toronto TTC agency. For TTC there are many routes with multiple ¡§branches¡¨, where the route has different paths. For route 107 for example there can be branches ¡§107¡¨, ¡§107A¡¨, ¡§107B¡¨, ¡§107C¡¨, etc. By using the branch information in the User Interface the passengers can see if a prediction is for a bus that is going on their desired branch.</li> -->
+<li><b> affectedByLayover   </b> (boolean) - Specifies whether the predictions are based not just on the position of the vehicle and the expected travel time, but also on whether a vehicle leaves a terminal at the configured layover time. This information can be useful to passengers because predictions that are affected by a layover will not be as accurate. This element is only included in the XML feed when the value is true. If the value is not set then it should be considered false.</li>
+
+<li><b>delayed          (boolean) - Specifies if the bus is not traveling as fast as expected over the last few minutes. This is useful for determining if a vehicle is stuck in traffic such that the predictions might not be as accurate. This feature is only enabled for certain agencies. This element is only included in the XML feed when the value is true. If the value is not set then it should be considered false. A ¡§slowness¡¨ value is also provided when a vehicle is delayed but this attribute is experimental and might be removed from the feed. The slowness attribute indicates how slow a vehicle is traveling over the last few minutes compared to normal.</b></li>
+<!-- <li><b>isScheduleBased </b>(boolean) - Specifies whether the predictions are based solely on the schedule and do not take the GPS position of the vehicle into account. This feature is not currently available for TTC. This element is only included in the XML feed when the value is true. If the value is not set then it should be considered false.</li> -->
+</ul>
+</div>
+</body></html>

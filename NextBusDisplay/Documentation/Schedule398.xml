@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<body copyright="All data copyright North County Transit District 2012.">
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Friday" direction="North to Oceanside">
+    <header>
+      <stop tag="28007">Coaster Santa Fe Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28000_ar">Coaster Oceanside Transit Center</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="23280000">06:28:00</stop>
+      <stop tag="28006" epochTime="23640000">06:34:00</stop>
+      <stop tag="28005" epochTime="24900000">06:55:00</stop>
+      <stop tag="28004" epochTime="25440000">07:04:00</stop>
+      <stop tag="28003" epochTime="25740000">07:09:00</stop>
+      <stop tag="28002" epochTime="26220000">07:17:00</stop>
+      <stop tag="28001" epochTime="26700000">07:25:00</stop>
+      <stop tag="28000_ar" epochTime="27000000">07:30:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28007" epochTime="27960000">07:46:00</stop>
+      <stop tag="28006" epochTime="28320000">07:52:00</stop>
+      <stop tag="28005" epochTime="29700000">08:15:00</stop>
+      <stop tag="28004" epochTime="30240000">08:24:00</stop>
+      <stop tag="28003" epochTime="30540000">08:29:00</stop>
+      <stop tag="28002" epochTime="30900000">08:35:00</stop>
+      <stop tag="28001" epochTime="31320000">08:42:00</stop>
+      <stop tag="28000_ar" epochTime="31680000">08:48:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="35280000">09:48:00</stop>
+      <stop tag="28006" epochTime="35640000">09:54:00</stop>
+      <stop tag="28005" epochTime="36840000">10:14:00</stop>
+      <stop tag="28004" epochTime="37380000">10:23:00</stop>
+      <stop tag="28003" epochTime="37860000">10:31:00</stop>
+      <stop tag="28002" epochTime="38220000">10:37:00</stop>
+      <stop tag="28001" epochTime="38580000">10:43:00</stop>
+      <stop tag="28000_ar" epochTime="39000000">10:50:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="45600000">12:40:00</stop>
+      <stop tag="28006" epochTime="45900000">12:45:00</stop>
+      <stop tag="28005" epochTime="47160000">13:06:00</stop>
+      <stop tag="28004" epochTime="47760000">13:16:00</stop>
+      <stop tag="28003" epochTime="48240000">13:24:00</stop>
+      <stop tag="28002" epochTime="48600000">13:30:00</stop>
+      <stop tag="28001" epochTime="49020000">13:37:00</stop>
+      <stop tag="28000_ar" epochTime="49380000">13:43:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28007" epochTime="51480000">14:18:00</stop>
+      <stop tag="28006" epochTime="51840000">14:24:00</stop>
+      <stop tag="28005" epochTime="53040000">14:44:00</stop>
+      <stop tag="28004" epochTime="53640000">14:54:00</stop>
+      <stop tag="28003" epochTime="54180000">15:03:00</stop>
+      <stop tag="28002" epochTime="54540000">15:09:00</stop>
+      <stop tag="28001" epochTime="54960000">15:16:00</stop>
+      <stop tag="28000_ar" epochTime="55260000">15:21:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28007" epochTime="56700000">15:45:00</stop>
+      <stop tag="28006" epochTime="57060000">15:51:00</stop>
+      <stop tag="28005" epochTime="58320000">16:12:00</stop>
+      <stop tag="28004" epochTime="58980000">16:23:00</stop>
+      <stop tag="28003" epochTime="59340000">16:29:00</stop>
+      <stop tag="28002" epochTime="59700000">16:35:00</stop>
+      <stop tag="28001" epochTime="60120000">16:42:00</stop>
+      <stop tag="28000_ar" epochTime="60480000">16:48:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="59220000">16:27:00</stop>
+      <stop tag="28006" epochTime="59640000">16:34:00</stop>
+      <stop tag="28005" epochTime="60840000">16:54:00</stop>
+      <stop tag="28004" epochTime="61500000">17:05:00</stop>
+      <stop tag="28003" epochTime="61860000">17:11:00</stop>
+      <stop tag="28002" epochTime="62220000">17:17:00</stop>
+      <stop tag="28001" epochTime="62580000">17:23:00</stop>
+      <stop tag="28000_ar" epochTime="62940000">17:29:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28007" epochTime="60720000">16:52:00</stop>
+      <stop tag="28006" epochTime="61080000">16:58:00</stop>
+      <stop tag="28005" epochTime="62340000">17:19:00</stop>
+      <stop tag="28004" epochTime="62880000">17:28:00</stop>
+      <stop tag="28003" epochTime="63240000">17:34:00</stop>
+      <stop tag="28002" epochTime="63840000">17:44:00</stop>
+      <stop tag="28001" epochTime="64200000">17:50:00</stop>
+      <stop tag="28000_ar" epochTime="64440000">17:54:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28007" epochTime="63240000">17:34:00</stop>
+      <stop tag="28006" epochTime="63600000">17:40:00</stop>
+      <stop tag="28005" epochTime="64920000">18:02:00</stop>
+      <stop tag="28004" epochTime="65520000">18:12:00</stop>
+      <stop tag="28003" epochTime="65880000">18:18:00</stop>
+      <stop tag="28002" epochTime="66180000">18:23:00</stop>
+      <stop tag="28001" epochTime="66720000">18:32:00</stop>
+      <stop tag="28000_ar" epochTime="67020000">18:37:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28007" epochTime="66300000">18:25:00</stop>
+      <stop tag="28006" epochTime="66720000">18:32:00</stop>
+      <stop tag="28005" epochTime="67920000">18:52:00</stop>
+      <stop tag="28004" epochTime="68520000">19:02:00</stop>
+      <stop tag="28003" epochTime="68820000">19:07:00</stop>
+      <stop tag="28002" epochTime="69180000">19:13:00</stop>
+      <stop tag="28001" epochTime="69540000">19:19:00</stop>
+      <stop tag="28000_ar" epochTime="69960000">19:26:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="68880000">19:08:00</stop>
+      <stop tag="28006" epochTime="69240000">19:14:00</stop>
+      <stop tag="28005" epochTime="70440000">19:34:00</stop>
+      <stop tag="28004" epochTime="71040000">19:44:00</stop>
+      <stop tag="28003" epochTime="71460000">19:51:00</stop>
+      <stop tag="28002" epochTime="71820000">19:57:00</stop>
+      <stop tag="28001" epochTime="72180000">20:03:00</stop>
+      <stop tag="28000_ar" epochTime="72600000">20:10:00</stop>
+    </tr>
+  </route>
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Friday" direction="South to San Diego">
+    <header>
+      <stop tag="28000">Coaster Oceanside Transit Center</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28007_ar">Coaster Santa Fe Station</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="18900000">05:15:00</stop>
+      <stop tag="28001" epochTime="19140000">05:19:00</stop>
+      <stop tag="28002" epochTime="19500000">05:25:00</stop>
+      <stop tag="28003" epochTime="19860000">05:31:00</stop>
+      <stop tag="28004" epochTime="20220000">05:37:00</stop>
+      <stop tag="28005" epochTime="20760000">05:46:00</stop>
+      <stop tag="28006" epochTime="22020000">06:07:00</stop>
+      <stop tag="28007_ar" epochTime="22500000">06:15:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28000" epochTime="21600000">06:00:00</stop>
+      <stop tag="28001" epochTime="21900000">06:05:00</stop>
+      <stop tag="28002" epochTime="22260000">06:11:00</stop>
+      <stop tag="28003" epochTime="22620000">06:17:00</stop>
+      <stop tag="28004" epochTime="22980000">06:23:00</stop>
+      <stop tag="28005" epochTime="23520000">06:32:00</stop>
+      <stop tag="28006" epochTime="24780000">06:53:00</stop>
+      <stop tag="28007_ar" epochTime="25200000">07:00:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28000" epochTime="24060000">06:41:00</stop>
+      <stop tag="28001" epochTime="24300000">06:45:00</stop>
+      <stop tag="28002" epochTime="24660000">06:51:00</stop>
+      <stop tag="28003" epochTime="25080000">06:58:00</stop>
+      <stop tag="28004" epochTime="25440000">07:04:00</stop>
+      <stop tag="28005" epochTime="26040000">07:14:00</stop>
+      <stop tag="28006" epochTime="27240000">07:34:00</stop>
+      <stop tag="28007_ar" epochTime="27720000">07:42:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28000" epochTime="26220000">07:17:00</stop>
+      <stop tag="28001" epochTime="26460000">07:21:00</stop>
+      <stop tag="28002" epochTime="26820000">07:27:00</stop>
+      <stop tag="28003" epochTime="27180000">07:33:00</stop>
+      <stop tag="28004" epochTime="27540000">07:39:00</stop>
+      <stop tag="28005" epochTime="28140000">07:49:00</stop>
+      <stop tag="28006" epochTime="29520000">08:12:00</stop>
+      <stop tag="28007_ar" epochTime="29880000">08:18:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="27720000">07:42:00</stop>
+      <stop tag="28001" epochTime="28020000">07:47:00</stop>
+      <stop tag="28002" epochTime="28380000">07:53:00</stop>
+      <stop tag="28003" epochTime="28680000">07:58:00</stop>
+      <stop tag="28004" epochTime="29100000">08:05:00</stop>
+      <stop tag="28005" epochTime="29700000">08:15:00</stop>
+      <stop tag="28006" epochTime="31080000">08:38:00</stop>
+      <stop tag="28007_ar" epochTime="31500000">08:45:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28000" epochTime="33660000">09:21:00</stop>
+      <stop tag="28001" epochTime="33960000">09:26:00</stop>
+      <stop tag="28002" epochTime="34320000">09:32:00</stop>
+      <stop tag="28003" epochTime="34620000">09:37:00</stop>
+      <stop tag="28004" epochTime="34980000">09:43:00</stop>
+      <stop tag="28005" epochTime="35580000">09:53:00</stop>
+      <stop tag="28006" epochTime="36840000">10:14:00</stop>
+      <stop tag="28007_ar" epochTime="37380000">10:23:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="39900000">11:05:00</stop>
+      <stop tag="28001" epochTime="40200000">11:10:00</stop>
+      <stop tag="28002" epochTime="40560000">11:16:00</stop>
+      <stop tag="28003" epochTime="40980000">11:23:00</stop>
+      <stop tag="28004" epochTime="41280000">11:28:00</stop>
+      <stop tag="28005" epochTime="41940000">11:39:00</stop>
+      <stop tag="28006" epochTime="43140000">11:59:00</stop>
+      <stop tag="28007_ar" epochTime="43560000">12:06:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="52500000">14:35:00</stop>
+      <stop tag="28001" epochTime="52800000">14:40:00</stop>
+      <stop tag="28002" epochTime="53160000">14:46:00</stop>
+      <stop tag="28003" epochTime="53520000">14:52:00</stop>
+      <stop tag="28004" epochTime="53820000">14:57:00</stop>
+      <stop tag="28005" epochTime="54420000">15:07:00</stop>
+      <stop tag="28006" epochTime="55860000">15:31:00</stop>
+      <stop tag="28007_ar" epochTime="56340000">15:39:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28000" epochTime="56040000">15:34:00</stop>
+      <stop tag="28001" epochTime="56400000">15:40:00</stop>
+      <stop tag="28002" epochTime="56820000">15:47:00</stop>
+      <stop tag="28003" epochTime="57240000">15:54:00</stop>
+      <stop tag="28004" epochTime="57600000">16:00:00</stop>
+      <stop tag="28005" epochTime="58200000">16:10:00</stop>
+      <stop tag="28006" epochTime="59460000">16:31:00</stop>
+      <stop tag="28007_ar" epochTime="59820000">16:37:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28000" epochTime="61440000">17:04:00</stop>
+      <stop tag="28001" epochTime="61740000">17:09:00</stop>
+      <stop tag="28002" epochTime="62160000">17:16:00</stop>
+      <stop tag="28003" epochTime="62460000">17:21:00</stop>
+      <stop tag="28004" epochTime="62940000">17:29:00</stop>
+      <stop tag="28005" epochTime="63600000">17:40:00</stop>
+      <stop tag="28006" epochTime="64800000">18:00:00</stop>
+      <stop tag="28007_ar" epochTime="65220000">18:07:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="63600000">17:40:00</stop>
+      <stop tag="28001" epochTime="63900000">17:45:00</stop>
+      <stop tag="28002" epochTime="64260000">17:51:00</stop>
+      <stop tag="28003" epochTime="64620000">17:57:00</stop>
+      <stop tag="28004" epochTime="64980000">18:03:00</stop>
+      <stop tag="28005" epochTime="65820000">18:17:00</stop>
+      <stop tag="28006" epochTime="67140000">18:39:00</stop>
+      <stop tag="28007_ar" epochTime="67560000">18:46:00</stop>
+    </tr>
+  </route>
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Monday" direction="North to Oceanside">
+    <header>
+      <stop tag="28007">Coaster Santa Fe Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28000_ar">Coaster Oceanside Transit Center</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="23280000">06:28:00</stop>
+      <stop tag="28006" epochTime="23640000">06:34:00</stop>
+      <stop tag="28005" epochTime="24900000">06:55:00</stop>
+      <stop tag="28004" epochTime="25440000">07:04:00</stop>
+      <stop tag="28003" epochTime="25740000">07:09:00</stop>
+      <stop tag="28002" epochTime="26220000">07:17:00</stop>
+      <stop tag="28001" epochTime="26700000">07:25:00</stop>
+      <stop tag="28000_ar" epochTime="27000000">07:30:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28007" epochTime="27960000">07:46:00</stop>
+      <stop tag="28006" epochTime="28320000">07:52:00</stop>
+      <stop tag="28005" epochTime="29700000">08:15:00</stop>
+      <stop tag="28004" epochTime="30240000">08:24:00</stop>
+      <stop tag="28003" epochTime="30540000">08:29:00</stop>
+      <stop tag="28002" epochTime="30900000">08:35:00</stop>
+      <stop tag="28001" epochTime="31320000">08:42:00</stop>
+      <stop tag="28000_ar" epochTime="31680000">08:48:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="35280000">09:48:00</stop>
+      <stop tag="28006" epochTime="35640000">09:54:00</stop>
+      <stop tag="28005" epochTime="36840000">10:14:00</stop>
+      <stop tag="28004" epochTime="37380000">10:23:00</stop>
+      <stop tag="28003" epochTime="37860000">10:31:00</stop>
+      <stop tag="28002" epochTime="38220000">10:37:00</stop>
+      <stop tag="28001" epochTime="38580000">10:43:00</stop>
+      <stop tag="28000_ar" epochTime="39000000">10:50:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="45600000">12:40:00</stop>
+      <stop tag="28006" epochTime="45900000">12:45:00</stop>
+      <stop tag="28005" epochTime="47160000">13:06:00</stop>
+      <stop tag="28004" epochTime="47760000">13:16:00</stop>
+      <stop tag="28003" epochTime="48240000">13:24:00</stop>
+      <stop tag="28002" epochTime="48600000">13:30:00</stop>
+      <stop tag="28001" epochTime="49020000">13:37:00</stop>
+      <stop tag="28000_ar" epochTime="49380000">13:43:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28007" epochTime="51480000">14:18:00</stop>
+      <stop tag="28006" epochTime="51840000">14:24:00</stop>
+      <stop tag="28005" epochTime="53040000">14:44:00</stop>
+      <stop tag="28004" epochTime="53640000">14:54:00</stop>
+      <stop tag="28003" epochTime="54180000">15:03:00</stop>
+      <stop tag="28002" epochTime="54540000">15:09:00</stop>
+      <stop tag="28001" epochTime="54960000">15:16:00</stop>
+      <stop tag="28000_ar" epochTime="55260000">15:21:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28007" epochTime="56700000">15:45:00</stop>
+      <stop tag="28006" epochTime="57060000">15:51:00</stop>
+      <stop tag="28005" epochTime="58320000">16:12:00</stop>
+      <stop tag="28004" epochTime="58980000">16:23:00</stop>
+      <stop tag="28003" epochTime="59340000">16:29:00</stop>
+      <stop tag="28002" epochTime="59700000">16:35:00</stop>
+      <stop tag="28001" epochTime="60120000">16:42:00</stop>
+      <stop tag="28000_ar" epochTime="60480000">16:48:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="59220000">16:27:00</stop>
+      <stop tag="28006" epochTime="59640000">16:34:00</stop>
+      <stop tag="28005" epochTime="60840000">16:54:00</stop>
+      <stop tag="28004" epochTime="61500000">17:05:00</stop>
+      <stop tag="28003" epochTime="61860000">17:11:00</stop>
+      <stop tag="28002" epochTime="62220000">17:17:00</stop>
+      <stop tag="28001" epochTime="62580000">17:23:00</stop>
+      <stop tag="28000_ar" epochTime="62940000">17:29:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28007" epochTime="60720000">16:52:00</stop>
+      <stop tag="28006" epochTime="61080000">16:58:00</stop>
+      <stop tag="28005" epochTime="62340000">17:19:00</stop>
+      <stop tag="28004" epochTime="62880000">17:28:00</stop>
+      <stop tag="28003" epochTime="63240000">17:34:00</stop>
+      <stop tag="28002" epochTime="63840000">17:44:00</stop>
+      <stop tag="28001" epochTime="64200000">17:50:00</stop>
+      <stop tag="28000_ar" epochTime="64440000">17:54:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28007" epochTime="63240000">17:34:00</stop>
+      <stop tag="28006" epochTime="63600000">17:40:00</stop>
+      <stop tag="28005" epochTime="64920000">18:02:00</stop>
+      <stop tag="28004" epochTime="65520000">18:12:00</stop>
+      <stop tag="28003" epochTime="65880000">18:18:00</stop>
+      <stop tag="28002" epochTime="66180000">18:23:00</stop>
+      <stop tag="28001" epochTime="66720000">18:32:00</stop>
+      <stop tag="28000_ar" epochTime="67020000">18:37:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28007" epochTime="66300000">18:25:00</stop>
+      <stop tag="28006" epochTime="66720000">18:32:00</stop>
+      <stop tag="28005" epochTime="67920000">18:52:00</stop>
+      <stop tag="28004" epochTime="68520000">19:02:00</stop>
+      <stop tag="28003" epochTime="68820000">19:07:00</stop>
+      <stop tag="28002" epochTime="69180000">19:13:00</stop>
+      <stop tag="28001" epochTime="69540000">19:19:00</stop>
+      <stop tag="28000_ar" epochTime="69960000">19:26:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="68880000">19:08:00</stop>
+      <stop tag="28006" epochTime="69240000">19:14:00</stop>
+      <stop tag="28005" epochTime="70440000">19:34:00</stop>
+      <stop tag="28004" epochTime="71040000">19:44:00</stop>
+      <stop tag="28003" epochTime="71460000">19:51:00</stop>
+      <stop tag="28002" epochTime="71820000">19:57:00</stop>
+      <stop tag="28001" epochTime="72180000">20:03:00</stop>
+      <stop tag="28000_ar" epochTime="72600000">20:10:00</stop>
+    </tr>
+  </route>
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Monday" direction="South to San Diego">
+    <header>
+      <stop tag="28000">Coaster Oceanside Transit Center</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28007_ar">Coaster Santa Fe Station</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="18900000">05:15:00</stop>
+      <stop tag="28001" epochTime="19140000">05:19:00</stop>
+      <stop tag="28002" epochTime="19500000">05:25:00</stop>
+      <stop tag="28003" epochTime="19860000">05:31:00</stop>
+      <stop tag="28004" epochTime="20220000">05:37:00</stop>
+      <stop tag="28005" epochTime="20760000">05:46:00</stop>
+      <stop tag="28006" epochTime="22020000">06:07:00</stop>
+      <stop tag="28007_ar" epochTime="22500000">06:15:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28000" epochTime="21600000">06:00:00</stop>
+      <stop tag="28001" epochTime="21900000">06:05:00</stop>
+      <stop tag="28002" epochTime="22260000">06:11:00</stop>
+      <stop tag="28003" epochTime="22620000">06:17:00</stop>
+      <stop tag="28004" epochTime="22980000">06:23:00</stop>
+      <stop tag="28005" epochTime="23520000">06:32:00</stop>
+      <stop tag="28006" epochTime="24780000">06:53:00</stop>
+      <stop tag="28007_ar" epochTime="25200000">07:00:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28000" epochTime="24060000">06:41:00</stop>
+      <stop tag="28001" epochTime="24300000">06:45:00</stop>
+      <stop tag="28002" epochTime="24660000">06:51:00</stop>
+      <stop tag="28003" epochTime="25080000">06:58:00</stop>
+      <stop tag="28004" epochTime="25440000">07:04:00</stop>
+      <stop tag="28005" epochTime="26040000">07:14:00</stop>
+      <stop tag="28006" epochTime="27240000">07:34:00</stop>
+      <stop tag="28007_ar" epochTime="27720000">07:42:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28000" epochTime="26220000">07:17:00</stop>
+      <stop tag="28001" epochTime="26460000">07:21:00</stop>
+      <stop tag="28002" epochTime="26820000">07:27:00</stop>
+      <stop tag="28003" epochTime="27180000">07:33:00</stop>
+      <stop tag="28004" epochTime="27540000">07:39:00</stop>
+      <stop tag="28005" epochTime="28140000">07:49:00</stop>
+      <stop tag="28006" epochTime="29520000">08:12:00</stop>
+      <stop tag="28007_ar" epochTime="29880000">08:18:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="27720000">07:42:00</stop>
+      <stop tag="28001" epochTime="28020000">07:47:00</stop>
+      <stop tag="28002" epochTime="28380000">07:53:00</stop>
+      <stop tag="28003" epochTime="28680000">07:58:00</stop>
+      <stop tag="28004" epochTime="29100000">08:05:00</stop>
+      <stop tag="28005" epochTime="29700000">08:15:00</stop>
+      <stop tag="28006" epochTime="31080000">08:38:00</stop>
+      <stop tag="28007_ar" epochTime="31500000">08:45:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28000" epochTime="33660000">09:21:00</stop>
+      <stop tag="28001" epochTime="33960000">09:26:00</stop>
+      <stop tag="28002" epochTime="34320000">09:32:00</stop>
+      <stop tag="28003" epochTime="34620000">09:37:00</stop>
+      <stop tag="28004" epochTime="34980000">09:43:00</stop>
+      <stop tag="28005" epochTime="35580000">09:53:00</stop>
+      <stop tag="28006" epochTime="36840000">10:14:00</stop>
+      <stop tag="28007_ar" epochTime="37380000">10:23:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="39900000">11:05:00</stop>
+      <stop tag="28001" epochTime="40200000">11:10:00</stop>
+      <stop tag="28002" epochTime="40560000">11:16:00</stop>
+      <stop tag="28003" epochTime="40980000">11:23:00</stop>
+      <stop tag="28004" epochTime="41280000">11:28:00</stop>
+      <stop tag="28005" epochTime="41940000">11:39:00</stop>
+      <stop tag="28006" epochTime="43140000">11:59:00</stop>
+      <stop tag="28007_ar" epochTime="43560000">12:06:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="52500000">14:35:00</stop>
+      <stop tag="28001" epochTime="52800000">14:40:00</stop>
+      <stop tag="28002" epochTime="53160000">14:46:00</stop>
+      <stop tag="28003" epochTime="53520000">14:52:00</stop>
+      <stop tag="28004" epochTime="53820000">14:57:00</stop>
+      <stop tag="28005" epochTime="54420000">15:07:00</stop>
+      <stop tag="28006" epochTime="55860000">15:31:00</stop>
+      <stop tag="28007_ar" epochTime="56340000">15:39:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28000" epochTime="56040000">15:34:00</stop>
+      <stop tag="28001" epochTime="56400000">15:40:00</stop>
+      <stop tag="28002" epochTime="56820000">15:47:00</stop>
+      <stop tag="28003" epochTime="57240000">15:54:00</stop>
+      <stop tag="28004" epochTime="57600000">16:00:00</stop>
+      <stop tag="28005" epochTime="58200000">16:10:00</stop>
+      <stop tag="28006" epochTime="59460000">16:31:00</stop>
+      <stop tag="28007_ar" epochTime="59820000">16:37:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28000" epochTime="61440000">17:04:00</stop>
+      <stop tag="28001" epochTime="61740000">17:09:00</stop>
+      <stop tag="28002" epochTime="62160000">17:16:00</stop>
+      <stop tag="28003" epochTime="62460000">17:21:00</stop>
+      <stop tag="28004" epochTime="62940000">17:29:00</stop>
+      <stop tag="28005" epochTime="63600000">17:40:00</stop>
+      <stop tag="28006" epochTime="64800000">18:00:00</stop>
+      <stop tag="28007_ar" epochTime="65220000">18:07:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="63600000">17:40:00</stop>
+      <stop tag="28001" epochTime="63900000">17:45:00</stop>
+      <stop tag="28002" epochTime="64260000">17:51:00</stop>
+      <stop tag="28003" epochTime="64620000">17:57:00</stop>
+      <stop tag="28004" epochTime="64980000">18:03:00</stop>
+      <stop tag="28005" epochTime="65820000">18:17:00</stop>
+      <stop tag="28006" epochTime="67140000">18:39:00</stop>
+      <stop tag="28007_ar" epochTime="67560000">18:46:00</stop>
+    </tr>
+  </route>
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Saturday" direction="North to Oceanside">
+    <header>
+      <stop tag="28007">Coaster Santa Fe Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28000_ar">Coaster Oceanside Transit Center</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="35280000">09:48:00</stop>
+      <stop tag="28006" epochTime="35640000">09:54:00</stop>
+      <stop tag="28005" epochTime="37020000">10:17:00</stop>
+      <stop tag="28004" epochTime="37500000">10:25:00</stop>
+      <stop tag="28003" epochTime="37860000">10:31:00</stop>
+      <stop tag="28002" epochTime="38160000">10:36:00</stop>
+      <stop tag="28001" epochTime="38580000">10:43:00</stop>
+      <stop tag="28000_ar" epochTime="39060000">10:51:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="44640000">12:24:00</stop>
+      <stop tag="28006" epochTime="45000000">12:30:00</stop>
+      <stop tag="28005" epochTime="46260000">12:51:00</stop>
+      <stop tag="28004" epochTime="46740000">12:59:00</stop>
+      <stop tag="28003" epochTime="47100000">13:05:00</stop>
+      <stop tag="28002" epochTime="47460000">13:11:00</stop>
+      <stop tag="28001" epochTime="47940000">13:19:00</stop>
+      <stop tag="28000_ar" epochTime="48300000">13:25:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="55500000">15:25:00</stop>
+      <stop tag="28006" epochTime="55920000">15:32:00</stop>
+      <stop tag="28005" epochTime="57240000">15:54:00</stop>
+      <stop tag="28004" epochTime="57780000">16:03:00</stop>
+      <stop tag="28003" epochTime="58140000">16:09:00</stop>
+      <stop tag="28002" epochTime="58500000">16:15:00</stop>
+      <stop tag="28001" epochTime="58920000">16:22:00</stop>
+      <stop tag="28000_ar" epochTime="59220000">16:27:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="67500000">18:45:00</stop>
+      <stop tag="28006" epochTime="67920000">18:52:00</stop>
+      <stop tag="28005" epochTime="69300000">19:15:00</stop>
+      <stop tag="28004" epochTime="69840000">19:24:00</stop>
+      <stop tag="28003" epochTime="70200000">19:30:00</stop>
+      <stop tag="28002" epochTime="70500000">19:35:00</stop>
+      <stop tag="28001" epochTime="70920000">19:42:00</stop>
+      <stop tag="28000_ar" epochTime="71280000">19:48:00</stop>
+    </tr>
+  </route>
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Saturday" direction="South to San Diego">
+    <header>
+      <stop tag="28000">Coaster Oceanside Transit Center</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28007_ar">Coaster Santa Fe Station</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="30660000">08:31:00</stop>
+      <stop tag="28001" epochTime="30960000">08:36:00</stop>
+      <stop tag="28002" epochTime="31320000">08:42:00</stop>
+      <stop tag="28003" epochTime="31680000">08:48:00</stop>
+      <stop tag="28004" epochTime="32040000">08:54:00</stop>
+      <stop tag="28005" epochTime="32640000">09:04:00</stop>
+      <stop tag="28006" epochTime="33900000">09:25:00</stop>
+      <stop tag="28007_ar" epochTime="34260000">09:31:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="39900000">11:05:00</stop>
+      <stop tag="28001" epochTime="40200000">11:10:00</stop>
+      <stop tag="28002" epochTime="40560000">11:16:00</stop>
+      <stop tag="28003" epochTime="40920000">11:22:00</stop>
+      <stop tag="28004" epochTime="41280000">11:28:00</stop>
+      <stop tag="28005" epochTime="41880000">11:38:00</stop>
+      <stop tag="28006" epochTime="43200000">12:00:00</stop>
+      <stop tag="28007_ar" epochTime="43680000">12:08:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="49800000">13:50:00</stop>
+      <stop tag="28001" epochTime="50100000">13:55:00</stop>
+      <stop tag="28002" epochTime="50460000">14:01:00</stop>
+      <stop tag="28003" epochTime="50820000">14:07:00</stop>
+      <stop tag="28004" epochTime="51180000">14:13:00</stop>
+      <stop tag="28005" epochTime="51780000">14:23:00</stop>
+      <stop tag="28006" epochTime="53100000">14:45:00</stop>
+      <stop tag="28007_ar" epochTime="53580000">14:53:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="62100000">17:15:00</stop>
+      <stop tag="28001" epochTime="62400000">17:20:00</stop>
+      <stop tag="28002" epochTime="62760000">17:26:00</stop>
+      <stop tag="28003" epochTime="63120000">17:32:00</stop>
+      <stop tag="28004" epochTime="63480000">17:38:00</stop>
+      <stop tag="28005" epochTime="64080000">17:48:00</stop>
+      <stop tag="28006" epochTime="65340000">18:09:00</stop>
+      <stop tag="28007_ar" epochTime="65820000">18:17:00</stop>
+    </tr>
+  </route>
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Sunday" direction="North to Oceanside">
+    <header>
+      <stop tag="28007">Coaster Santa Fe Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28000_ar">Coaster Oceanside Transit Center</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="35280000">09:48:00</stop>
+      <stop tag="28006" epochTime="35640000">09:54:00</stop>
+      <stop tag="28005" epochTime="37020000">10:17:00</stop>
+      <stop tag="28004" epochTime="37500000">10:25:00</stop>
+      <stop tag="28003" epochTime="37860000">10:31:00</stop>
+      <stop tag="28002" epochTime="38160000">10:36:00</stop>
+      <stop tag="28001" epochTime="38580000">10:43:00</stop>
+      <stop tag="28000_ar" epochTime="39060000">10:51:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="44640000">12:24:00</stop>
+      <stop tag="28006" epochTime="45000000">12:30:00</stop>
+      <stop tag="28005" epochTime="46260000">12:51:00</stop>
+      <stop tag="28004" epochTime="46740000">12:59:00</stop>
+      <stop tag="28003" epochTime="47100000">13:05:00</stop>
+      <stop tag="28002" epochTime="47460000">13:11:00</stop>
+      <stop tag="28001" epochTime="47940000">13:19:00</stop>
+      <stop tag="28000_ar" epochTime="48300000">13:25:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="55500000">15:25:00</stop>
+      <stop tag="28006" epochTime="55920000">15:32:00</stop>
+      <stop tag="28005" epochTime="57240000">15:54:00</stop>
+      <stop tag="28004" epochTime="57780000">16:03:00</stop>
+      <stop tag="28003" epochTime="58140000">16:09:00</stop>
+      <stop tag="28002" epochTime="58500000">16:15:00</stop>
+      <stop tag="28001" epochTime="58920000">16:22:00</stop>
+      <stop tag="28000_ar" epochTime="59220000">16:27:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="67500000">18:45:00</stop>
+      <stop tag="28006" epochTime="67920000">18:52:00</stop>
+      <stop tag="28005" epochTime="69300000">19:15:00</stop>
+      <stop tag="28004" epochTime="69840000">19:24:00</stop>
+      <stop tag="28003" epochTime="70200000">19:30:00</stop>
+      <stop tag="28002" epochTime="70500000">19:35:00</stop>
+      <stop tag="28001" epochTime="70920000">19:42:00</stop>
+      <stop tag="28000_ar" epochTime="71280000">19:48:00</stop>
+    </tr>
+  </route>
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Sunday" direction="South to San Diego">
+    <header>
+      <stop tag="28000">Coaster Oceanside Transit Center</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28007_ar">Coaster Santa Fe Station</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="30660000">08:31:00</stop>
+      <stop tag="28001" epochTime="30960000">08:36:00</stop>
+      <stop tag="28002" epochTime="31320000">08:42:00</stop>
+      <stop tag="28003" epochTime="31680000">08:48:00</stop>
+      <stop tag="28004" epochTime="32040000">08:54:00</stop>
+      <stop tag="28005" epochTime="32640000">09:04:00</stop>
+      <stop tag="28006" epochTime="33900000">09:25:00</stop>
+      <stop tag="28007_ar" epochTime="34260000">09:31:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="39900000">11:05:00</stop>
+      <stop tag="28001" epochTime="40200000">11:10:00</stop>
+      <stop tag="28002" epochTime="40560000">11:16:00</stop>
+      <stop tag="28003" epochTime="40920000">11:22:00</stop>
+      <stop tag="28004" epochTime="41280000">11:28:00</stop>
+      <stop tag="28005" epochTime="41880000">11:38:00</stop>
+      <stop tag="28006" epochTime="43200000">12:00:00</stop>
+      <stop tag="28007_ar" epochTime="43680000">12:08:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="49800000">13:50:00</stop>
+      <stop tag="28001" epochTime="50100000">13:55:00</stop>
+      <stop tag="28002" epochTime="50460000">14:01:00</stop>
+      <stop tag="28003" epochTime="50820000">14:07:00</stop>
+      <stop tag="28004" epochTime="51180000">14:13:00</stop>
+      <stop tag="28005" epochTime="51780000">14:23:00</stop>
+      <stop tag="28006" epochTime="53100000">14:45:00</stop>
+      <stop tag="28007_ar" epochTime="53580000">14:53:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="62100000">17:15:00</stop>
+      <stop tag="28001" epochTime="62400000">17:20:00</stop>
+      <stop tag="28002" epochTime="62760000">17:26:00</stop>
+      <stop tag="28003" epochTime="63120000">17:32:00</stop>
+      <stop tag="28004" epochTime="63480000">17:38:00</stop>
+      <stop tag="28005" epochTime="64080000">17:48:00</stop>
+      <stop tag="28006" epochTime="65340000">18:09:00</stop>
+      <stop tag="28007_ar" epochTime="65820000">18:17:00</stop>
+    </tr>
+  </route>
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Thursday" direction="North to Oceanside">
+    <header>
+      <stop tag="28007">Coaster Santa Fe Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28000_ar">Coaster Oceanside Transit Center</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="23280000">06:28:00</stop>
+      <stop tag="28006" epochTime="23640000">06:34:00</stop>
+      <stop tag="28005" epochTime="24900000">06:55:00</stop>
+      <stop tag="28004" epochTime="25440000">07:04:00</stop>
+      <stop tag="28003" epochTime="25740000">07:09:00</stop>
+      <stop tag="28002" epochTime="26220000">07:17:00</stop>
+      <stop tag="28001" epochTime="26700000">07:25:00</stop>
+      <stop tag="28000_ar" epochTime="27000000">07:30:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28007" epochTime="27960000">07:46:00</stop>
+      <stop tag="28006" epochTime="28320000">07:52:00</stop>
+      <stop tag="28005" epochTime="29700000">08:15:00</stop>
+      <stop tag="28004" epochTime="30240000">08:24:00</stop>
+      <stop tag="28003" epochTime="30540000">08:29:00</stop>
+      <stop tag="28002" epochTime="30900000">08:35:00</stop>
+      <stop tag="28001" epochTime="31320000">08:42:00</stop>
+      <stop tag="28000_ar" epochTime="31680000">08:48:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="35280000">09:48:00</stop>
+      <stop tag="28006" epochTime="35640000">09:54:00</stop>
+      <stop tag="28005" epochTime="36840000">10:14:00</stop>
+      <stop tag="28004" epochTime="37380000">10:23:00</stop>
+      <stop tag="28003" epochTime="37860000">10:31:00</stop>
+      <stop tag="28002" epochTime="38220000">10:37:00</stop>
+      <stop tag="28001" epochTime="38580000">10:43:00</stop>
+      <stop tag="28000_ar" epochTime="39000000">10:50:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="45600000">12:40:00</stop>
+      <stop tag="28006" epochTime="45900000">12:45:00</stop>
+      <stop tag="28005" epochTime="47160000">13:06:00</stop>
+      <stop tag="28004" epochTime="47760000">13:16:00</stop>
+      <stop tag="28003" epochTime="48240000">13:24:00</stop>
+      <stop tag="28002" epochTime="48600000">13:30:00</stop>
+      <stop tag="28001" epochTime="49020000">13:37:00</stop>
+      <stop tag="28000_ar" epochTime="49380000">13:43:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28007" epochTime="51480000">14:18:00</stop>
+      <stop tag="28006" epochTime="51840000">14:24:00</stop>
+      <stop tag="28005" epochTime="53040000">14:44:00</stop>
+      <stop tag="28004" epochTime="53640000">14:54:00</stop>
+      <stop tag="28003" epochTime="54180000">15:03:00</stop>
+      <stop tag="28002" epochTime="54540000">15:09:00</stop>
+      <stop tag="28001" epochTime="54960000">15:16:00</stop>
+      <stop tag="28000_ar" epochTime="55260000">15:21:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28007" epochTime="56700000">15:45:00</stop>
+      <stop tag="28006" epochTime="57060000">15:51:00</stop>
+      <stop tag="28005" epochTime="58320000">16:12:00</stop>
+      <stop tag="28004" epochTime="58980000">16:23:00</stop>
+      <stop tag="28003" epochTime="59340000">16:29:00</stop>
+      <stop tag="28002" epochTime="59700000">16:35:00</stop>
+      <stop tag="28001" epochTime="60120000">16:42:00</stop>
+      <stop tag="28000_ar" epochTime="60480000">16:48:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="59220000">16:27:00</stop>
+      <stop tag="28006" epochTime="59640000">16:34:00</stop>
+      <stop tag="28005" epochTime="60840000">16:54:00</stop>
+      <stop tag="28004" epochTime="61500000">17:05:00</stop>
+      <stop tag="28003" epochTime="61860000">17:11:00</stop>
+      <stop tag="28002" epochTime="62220000">17:17:00</stop>
+      <stop tag="28001" epochTime="62580000">17:23:00</stop>
+      <stop tag="28000_ar" epochTime="62940000">17:29:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28007" epochTime="60720000">16:52:00</stop>
+      <stop tag="28006" epochTime="61080000">16:58:00</stop>
+      <stop tag="28005" epochTime="62340000">17:19:00</stop>
+      <stop tag="28004" epochTime="62880000">17:28:00</stop>
+      <stop tag="28003" epochTime="63240000">17:34:00</stop>
+      <stop tag="28002" epochTime="63840000">17:44:00</stop>
+      <stop tag="28001" epochTime="64200000">17:50:00</stop>
+      <stop tag="28000_ar" epochTime="64440000">17:54:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28007" epochTime="63240000">17:34:00</stop>
+      <stop tag="28006" epochTime="63600000">17:40:00</stop>
+      <stop tag="28005" epochTime="64920000">18:02:00</stop>
+      <stop tag="28004" epochTime="65520000">18:12:00</stop>
+      <stop tag="28003" epochTime="65880000">18:18:00</stop>
+      <stop tag="28002" epochTime="66180000">18:23:00</stop>
+      <stop tag="28001" epochTime="66720000">18:32:00</stop>
+      <stop tag="28000_ar" epochTime="67020000">18:37:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28007" epochTime="66300000">18:25:00</stop>
+      <stop tag="28006" epochTime="66720000">18:32:00</stop>
+      <stop tag="28005" epochTime="67920000">18:52:00</stop>
+      <stop tag="28004" epochTime="68520000">19:02:00</stop>
+      <stop tag="28003" epochTime="68820000">19:07:00</stop>
+      <stop tag="28002" epochTime="69180000">19:13:00</stop>
+      <stop tag="28001" epochTime="69540000">19:19:00</stop>
+      <stop tag="28000_ar" epochTime="69960000">19:26:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="68880000">19:08:00</stop>
+      <stop tag="28006" epochTime="69240000">19:14:00</stop>
+      <stop tag="28005" epochTime="70440000">19:34:00</stop>
+      <stop tag="28004" epochTime="71040000">19:44:00</stop>
+      <stop tag="28003" epochTime="71460000">19:51:00</stop>
+      <stop tag="28002" epochTime="71820000">19:57:00</stop>
+      <stop tag="28001" epochTime="72180000">20:03:00</stop>
+      <stop tag="28000_ar" epochTime="72600000">20:10:00</stop>
+    </tr>
+  </route>
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Thursday" direction="South to San Diego">
+    <header>
+      <stop tag="28000">Coaster Oceanside Transit Center</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28007_ar">Coaster Santa Fe Station</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="18900000">05:15:00</stop>
+      <stop tag="28001" epochTime="19140000">05:19:00</stop>
+      <stop tag="28002" epochTime="19500000">05:25:00</stop>
+      <stop tag="28003" epochTime="19860000">05:31:00</stop>
+      <stop tag="28004" epochTime="20220000">05:37:00</stop>
+      <stop tag="28005" epochTime="20760000">05:46:00</stop>
+      <stop tag="28006" epochTime="22020000">06:07:00</stop>
+      <stop tag="28007_ar" epochTime="22500000">06:15:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28000" epochTime="21600000">06:00:00</stop>
+      <stop tag="28001" epochTime="21900000">06:05:00</stop>
+      <stop tag="28002" epochTime="22260000">06:11:00</stop>
+      <stop tag="28003" epochTime="22620000">06:17:00</stop>
+      <stop tag="28004" epochTime="22980000">06:23:00</stop>
+      <stop tag="28005" epochTime="23520000">06:32:00</stop>
+      <stop tag="28006" epochTime="24780000">06:53:00</stop>
+      <stop tag="28007_ar" epochTime="25200000">07:00:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28000" epochTime="24060000">06:41:00</stop>
+      <stop tag="28001" epochTime="24300000">06:45:00</stop>
+      <stop tag="28002" epochTime="24660000">06:51:00</stop>
+      <stop tag="28003" epochTime="25080000">06:58:00</stop>
+      <stop tag="28004" epochTime="25440000">07:04:00</stop>
+      <stop tag="28005" epochTime="26040000">07:14:00</stop>
+      <stop tag="28006" epochTime="27240000">07:34:00</stop>
+      <stop tag="28007_ar" epochTime="27720000">07:42:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28000" epochTime="26220000">07:17:00</stop>
+      <stop tag="28001" epochTime="26460000">07:21:00</stop>
+      <stop tag="28002" epochTime="26820000">07:27:00</stop>
+      <stop tag="28003" epochTime="27180000">07:33:00</stop>
+      <stop tag="28004" epochTime="27540000">07:39:00</stop>
+      <stop tag="28005" epochTime="28140000">07:49:00</stop>
+      <stop tag="28006" epochTime="29520000">08:12:00</stop>
+      <stop tag="28007_ar" epochTime="29880000">08:18:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="27720000">07:42:00</stop>
+      <stop tag="28001" epochTime="28020000">07:47:00</stop>
+      <stop tag="28002" epochTime="28380000">07:53:00</stop>
+      <stop tag="28003" epochTime="28680000">07:58:00</stop>
+      <stop tag="28004" epochTime="29100000">08:05:00</stop>
+      <stop tag="28005" epochTime="29700000">08:15:00</stop>
+      <stop tag="28006" epochTime="31080000">08:38:00</stop>
+      <stop tag="28007_ar" epochTime="31500000">08:45:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28000" epochTime="33660000">09:21:00</stop>
+      <stop tag="28001" epochTime="33960000">09:26:00</stop>
+      <stop tag="28002" epochTime="34320000">09:32:00</stop>
+      <stop tag="28003" epochTime="34620000">09:37:00</stop>
+      <stop tag="28004" epochTime="34980000">09:43:00</stop>
+      <stop tag="28005" epochTime="35580000">09:53:00</stop>
+      <stop tag="28006" epochTime="36840000">10:14:00</stop>
+      <stop tag="28007_ar" epochTime="37380000">10:23:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="39900000">11:05:00</stop>
+      <stop tag="28001" epochTime="40200000">11:10:00</stop>
+      <stop tag="28002" epochTime="40560000">11:16:00</stop>
+      <stop tag="28003" epochTime="40980000">11:23:00</stop>
+      <stop tag="28004" epochTime="41280000">11:28:00</stop>
+      <stop tag="28005" epochTime="41940000">11:39:00</stop>
+      <stop tag="28006" epochTime="43140000">11:59:00</stop>
+      <stop tag="28007_ar" epochTime="43560000">12:06:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="52500000">14:35:00</stop>
+      <stop tag="28001" epochTime="52800000">14:40:00</stop>
+      <stop tag="28002" epochTime="53160000">14:46:00</stop>
+      <stop tag="28003" epochTime="53520000">14:52:00</stop>
+      <stop tag="28004" epochTime="53820000">14:57:00</stop>
+      <stop tag="28005" epochTime="54420000">15:07:00</stop>
+      <stop tag="28006" epochTime="55860000">15:31:00</stop>
+      <stop tag="28007_ar" epochTime="56340000">15:39:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28000" epochTime="56040000">15:34:00</stop>
+      <stop tag="28001" epochTime="56400000">15:40:00</stop>
+      <stop tag="28002" epochTime="56820000">15:47:00</stop>
+      <stop tag="28003" epochTime="57240000">15:54:00</stop>
+      <stop tag="28004" epochTime="57600000">16:00:00</stop>
+      <stop tag="28005" epochTime="58200000">16:10:00</stop>
+      <stop tag="28006" epochTime="59460000">16:31:00</stop>
+      <stop tag="28007_ar" epochTime="59820000">16:37:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28000" epochTime="61440000">17:04:00</stop>
+      <stop tag="28001" epochTime="61740000">17:09:00</stop>
+      <stop tag="28002" epochTime="62160000">17:16:00</stop>
+      <stop tag="28003" epochTime="62460000">17:21:00</stop>
+      <stop tag="28004" epochTime="62940000">17:29:00</stop>
+      <stop tag="28005" epochTime="63600000">17:40:00</stop>
+      <stop tag="28006" epochTime="64800000">18:00:00</stop>
+      <stop tag="28007_ar" epochTime="65220000">18:07:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="63600000">17:40:00</stop>
+      <stop tag="28001" epochTime="63900000">17:45:00</stop>
+      <stop tag="28002" epochTime="64260000">17:51:00</stop>
+      <stop tag="28003" epochTime="64620000">17:57:00</stop>
+      <stop tag="28004" epochTime="64980000">18:03:00</stop>
+      <stop tag="28005" epochTime="65820000">18:17:00</stop>
+      <stop tag="28006" epochTime="67140000">18:39:00</stop>
+      <stop tag="28007_ar" epochTime="67560000">18:46:00</stop>
+    </tr>
+  </route>
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Tuesday" direction="North to Oceanside">
+    <header>
+      <stop tag="28007">Coaster Santa Fe Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28000_ar">Coaster Oceanside Transit Center</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="23280000">06:28:00</stop>
+      <stop tag="28006" epochTime="23640000">06:34:00</stop>
+      <stop tag="28005" epochTime="24900000">06:55:00</stop>
+      <stop tag="28004" epochTime="25440000">07:04:00</stop>
+      <stop tag="28003" epochTime="25740000">07:09:00</stop>
+      <stop tag="28002" epochTime="26220000">07:17:00</stop>
+      <stop tag="28001" epochTime="26700000">07:25:00</stop>
+      <stop tag="28000_ar" epochTime="27000000">07:30:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28007" epochTime="27960000">07:46:00</stop>
+      <stop tag="28006" epochTime="28320000">07:52:00</stop>
+      <stop tag="28005" epochTime="29700000">08:15:00</stop>
+      <stop tag="28004" epochTime="30240000">08:24:00</stop>
+      <stop tag="28003" epochTime="30540000">08:29:00</stop>
+      <stop tag="28002" epochTime="30900000">08:35:00</stop>
+      <stop tag="28001" epochTime="31320000">08:42:00</stop>
+      <stop tag="28000_ar" epochTime="31680000">08:48:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="35280000">09:48:00</stop>
+      <stop tag="28006" epochTime="35640000">09:54:00</stop>
+      <stop tag="28005" epochTime="36840000">10:14:00</stop>
+      <stop tag="28004" epochTime="37380000">10:23:00</stop>
+      <stop tag="28003" epochTime="37860000">10:31:00</stop>
+      <stop tag="28002" epochTime="38220000">10:37:00</stop>
+      <stop tag="28001" epochTime="38580000">10:43:00</stop>
+      <stop tag="28000_ar" epochTime="39000000">10:50:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="45600000">12:40:00</stop>
+      <stop tag="28006" epochTime="45900000">12:45:00</stop>
+      <stop tag="28005" epochTime="47160000">13:06:00</stop>
+      <stop tag="28004" epochTime="47760000">13:16:00</stop>
+      <stop tag="28003" epochTime="48240000">13:24:00</stop>
+      <stop tag="28002" epochTime="48600000">13:30:00</stop>
+      <stop tag="28001" epochTime="49020000">13:37:00</stop>
+      <stop tag="28000_ar" epochTime="49380000">13:43:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28007" epochTime="51480000">14:18:00</stop>
+      <stop tag="28006" epochTime="51840000">14:24:00</stop>
+      <stop tag="28005" epochTime="53040000">14:44:00</stop>
+      <stop tag="28004" epochTime="53640000">14:54:00</stop>
+      <stop tag="28003" epochTime="54180000">15:03:00</stop>
+      <stop tag="28002" epochTime="54540000">15:09:00</stop>
+      <stop tag="28001" epochTime="54960000">15:16:00</stop>
+      <stop tag="28000_ar" epochTime="55260000">15:21:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28007" epochTime="56700000">15:45:00</stop>
+      <stop tag="28006" epochTime="57060000">15:51:00</stop>
+      <stop tag="28005" epochTime="58320000">16:12:00</stop>
+      <stop tag="28004" epochTime="58980000">16:23:00</stop>
+      <stop tag="28003" epochTime="59340000">16:29:00</stop>
+      <stop tag="28002" epochTime="59700000">16:35:00</stop>
+      <stop tag="28001" epochTime="60120000">16:42:00</stop>
+      <stop tag="28000_ar" epochTime="60480000">16:48:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="59220000">16:27:00</stop>
+      <stop tag="28006" epochTime="59640000">16:34:00</stop>
+      <stop tag="28005" epochTime="60840000">16:54:00</stop>
+      <stop tag="28004" epochTime="61500000">17:05:00</stop>
+      <stop tag="28003" epochTime="61860000">17:11:00</stop>
+      <stop tag="28002" epochTime="62220000">17:17:00</stop>
+      <stop tag="28001" epochTime="62580000">17:23:00</stop>
+      <stop tag="28000_ar" epochTime="62940000">17:29:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28007" epochTime="60720000">16:52:00</stop>
+      <stop tag="28006" epochTime="61080000">16:58:00</stop>
+      <stop tag="28005" epochTime="62340000">17:19:00</stop>
+      <stop tag="28004" epochTime="62880000">17:28:00</stop>
+      <stop tag="28003" epochTime="63240000">17:34:00</stop>
+      <stop tag="28002" epochTime="63840000">17:44:00</stop>
+      <stop tag="28001" epochTime="64200000">17:50:00</stop>
+      <stop tag="28000_ar" epochTime="64440000">17:54:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28007" epochTime="63240000">17:34:00</stop>
+      <stop tag="28006" epochTime="63600000">17:40:00</stop>
+      <stop tag="28005" epochTime="64920000">18:02:00</stop>
+      <stop tag="28004" epochTime="65520000">18:12:00</stop>
+      <stop tag="28003" epochTime="65880000">18:18:00</stop>
+      <stop tag="28002" epochTime="66180000">18:23:00</stop>
+      <stop tag="28001" epochTime="66720000">18:32:00</stop>
+      <stop tag="28000_ar" epochTime="67020000">18:37:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28007" epochTime="66300000">18:25:00</stop>
+      <stop tag="28006" epochTime="66720000">18:32:00</stop>
+      <stop tag="28005" epochTime="67920000">18:52:00</stop>
+      <stop tag="28004" epochTime="68520000">19:02:00</stop>
+      <stop tag="28003" epochTime="68820000">19:07:00</stop>
+      <stop tag="28002" epochTime="69180000">19:13:00</stop>
+      <stop tag="28001" epochTime="69540000">19:19:00</stop>
+      <stop tag="28000_ar" epochTime="69960000">19:26:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="68880000">19:08:00</stop>
+      <stop tag="28006" epochTime="69240000">19:14:00</stop>
+      <stop tag="28005" epochTime="70440000">19:34:00</stop>
+      <stop tag="28004" epochTime="71040000">19:44:00</stop>
+      <stop tag="28003" epochTime="71460000">19:51:00</stop>
+      <stop tag="28002" epochTime="71820000">19:57:00</stop>
+      <stop tag="28001" epochTime="72180000">20:03:00</stop>
+      <stop tag="28000_ar" epochTime="72600000">20:10:00</stop>
+    </tr>
+  </route>
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Tuesday" direction="South to San Diego">
+    <header>
+      <stop tag="28000">Coaster Oceanside Transit Center</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28007_ar">Coaster Santa Fe Station</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="18900000">05:15:00</stop>
+      <stop tag="28001" epochTime="19140000">05:19:00</stop>
+      <stop tag="28002" epochTime="19500000">05:25:00</stop>
+      <stop tag="28003" epochTime="19860000">05:31:00</stop>
+      <stop tag="28004" epochTime="20220000">05:37:00</stop>
+      <stop tag="28005" epochTime="20760000">05:46:00</stop>
+      <stop tag="28006" epochTime="22020000">06:07:00</stop>
+      <stop tag="28007_ar" epochTime="22500000">06:15:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28000" epochTime="21600000">06:00:00</stop>
+      <stop tag="28001" epochTime="21900000">06:05:00</stop>
+      <stop tag="28002" epochTime="22260000">06:11:00</stop>
+      <stop tag="28003" epochTime="22620000">06:17:00</stop>
+      <stop tag="28004" epochTime="22980000">06:23:00</stop>
+      <stop tag="28005" epochTime="23520000">06:32:00</stop>
+      <stop tag="28006" epochTime="24780000">06:53:00</stop>
+      <stop tag="28007_ar" epochTime="25200000">07:00:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28000" epochTime="24060000">06:41:00</stop>
+      <stop tag="28001" epochTime="24300000">06:45:00</stop>
+      <stop tag="28002" epochTime="24660000">06:51:00</stop>
+      <stop tag="28003" epochTime="25080000">06:58:00</stop>
+      <stop tag="28004" epochTime="25440000">07:04:00</stop>
+      <stop tag="28005" epochTime="26040000">07:14:00</stop>
+      <stop tag="28006" epochTime="27240000">07:34:00</stop>
+      <stop tag="28007_ar" epochTime="27720000">07:42:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28000" epochTime="26220000">07:17:00</stop>
+      <stop tag="28001" epochTime="26460000">07:21:00</stop>
+      <stop tag="28002" epochTime="26820000">07:27:00</stop>
+      <stop tag="28003" epochTime="27180000">07:33:00</stop>
+      <stop tag="28004" epochTime="27540000">07:39:00</stop>
+      <stop tag="28005" epochTime="28140000">07:49:00</stop>
+      <stop tag="28006" epochTime="29520000">08:12:00</stop>
+      <stop tag="28007_ar" epochTime="29880000">08:18:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="27720000">07:42:00</stop>
+      <stop tag="28001" epochTime="28020000">07:47:00</stop>
+      <stop tag="28002" epochTime="28380000">07:53:00</stop>
+      <stop tag="28003" epochTime="28680000">07:58:00</stop>
+      <stop tag="28004" epochTime="29100000">08:05:00</stop>
+      <stop tag="28005" epochTime="29700000">08:15:00</stop>
+      <stop tag="28006" epochTime="31080000">08:38:00</stop>
+      <stop tag="28007_ar" epochTime="31500000">08:45:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28000" epochTime="33660000">09:21:00</stop>
+      <stop tag="28001" epochTime="33960000">09:26:00</stop>
+      <stop tag="28002" epochTime="34320000">09:32:00</stop>
+      <stop tag="28003" epochTime="34620000">09:37:00</stop>
+      <stop tag="28004" epochTime="34980000">09:43:00</stop>
+      <stop tag="28005" epochTime="35580000">09:53:00</stop>
+      <stop tag="28006" epochTime="36840000">10:14:00</stop>
+      <stop tag="28007_ar" epochTime="37380000">10:23:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="39900000">11:05:00</stop>
+      <stop tag="28001" epochTime="40200000">11:10:00</stop>
+      <stop tag="28002" epochTime="40560000">11:16:00</stop>
+      <stop tag="28003" epochTime="40980000">11:23:00</stop>
+      <stop tag="28004" epochTime="41280000">11:28:00</stop>
+      <stop tag="28005" epochTime="41940000">11:39:00</stop>
+      <stop tag="28006" epochTime="43140000">11:59:00</stop>
+      <stop tag="28007_ar" epochTime="43560000">12:06:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="52500000">14:35:00</stop>
+      <stop tag="28001" epochTime="52800000">14:40:00</stop>
+      <stop tag="28002" epochTime="53160000">14:46:00</stop>
+      <stop tag="28003" epochTime="53520000">14:52:00</stop>
+      <stop tag="28004" epochTime="53820000">14:57:00</stop>
+      <stop tag="28005" epochTime="54420000">15:07:00</stop>
+      <stop tag="28006" epochTime="55860000">15:31:00</stop>
+      <stop tag="28007_ar" epochTime="56340000">15:39:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28000" epochTime="56040000">15:34:00</stop>
+      <stop tag="28001" epochTime="56400000">15:40:00</stop>
+      <stop tag="28002" epochTime="56820000">15:47:00</stop>
+      <stop tag="28003" epochTime="57240000">15:54:00</stop>
+      <stop tag="28004" epochTime="57600000">16:00:00</stop>
+      <stop tag="28005" epochTime="58200000">16:10:00</stop>
+      <stop tag="28006" epochTime="59460000">16:31:00</stop>
+      <stop tag="28007_ar" epochTime="59820000">16:37:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28000" epochTime="61440000">17:04:00</stop>
+      <stop tag="28001" epochTime="61740000">17:09:00</stop>
+      <stop tag="28002" epochTime="62160000">17:16:00</stop>
+      <stop tag="28003" epochTime="62460000">17:21:00</stop>
+      <stop tag="28004" epochTime="62940000">17:29:00</stop>
+      <stop tag="28005" epochTime="63600000">17:40:00</stop>
+      <stop tag="28006" epochTime="64800000">18:00:00</stop>
+      <stop tag="28007_ar" epochTime="65220000">18:07:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="63600000">17:40:00</stop>
+      <stop tag="28001" epochTime="63900000">17:45:00</stop>
+      <stop tag="28002" epochTime="64260000">17:51:00</stop>
+      <stop tag="28003" epochTime="64620000">17:57:00</stop>
+      <stop tag="28004" epochTime="64980000">18:03:00</stop>
+      <stop tag="28005" epochTime="65820000">18:17:00</stop>
+      <stop tag="28006" epochTime="67140000">18:39:00</stop>
+      <stop tag="28007_ar" epochTime="67560000">18:46:00</stop>
+    </tr>
+  </route>
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Wednesday" direction="North to Oceanside">
+    <header>
+      <stop tag="28007">Coaster Santa Fe Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28000_ar">Coaster Oceanside Transit Center</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="23280000">06:28:00</stop>
+      <stop tag="28006" epochTime="23640000">06:34:00</stop>
+      <stop tag="28005" epochTime="24900000">06:55:00</stop>
+      <stop tag="28004" epochTime="25440000">07:04:00</stop>
+      <stop tag="28003" epochTime="25740000">07:09:00</stop>
+      <stop tag="28002" epochTime="26220000">07:17:00</stop>
+      <stop tag="28001" epochTime="26700000">07:25:00</stop>
+      <stop tag="28000_ar" epochTime="27000000">07:30:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28007" epochTime="27960000">07:46:00</stop>
+      <stop tag="28006" epochTime="28320000">07:52:00</stop>
+      <stop tag="28005" epochTime="29700000">08:15:00</stop>
+      <stop tag="28004" epochTime="30240000">08:24:00</stop>
+      <stop tag="28003" epochTime="30540000">08:29:00</stop>
+      <stop tag="28002" epochTime="30900000">08:35:00</stop>
+      <stop tag="28001" epochTime="31320000">08:42:00</stop>
+      <stop tag="28000_ar" epochTime="31680000">08:48:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="35280000">09:48:00</stop>
+      <stop tag="28006" epochTime="35640000">09:54:00</stop>
+      <stop tag="28005" epochTime="36840000">10:14:00</stop>
+      <stop tag="28004" epochTime="37380000">10:23:00</stop>
+      <stop tag="28003" epochTime="37860000">10:31:00</stop>
+      <stop tag="28002" epochTime="38220000">10:37:00</stop>
+      <stop tag="28001" epochTime="38580000">10:43:00</stop>
+      <stop tag="28000_ar" epochTime="39000000">10:50:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="45600000">12:40:00</stop>
+      <stop tag="28006" epochTime="45900000">12:45:00</stop>
+      <stop tag="28005" epochTime="47160000">13:06:00</stop>
+      <stop tag="28004" epochTime="47760000">13:16:00</stop>
+      <stop tag="28003" epochTime="48240000">13:24:00</stop>
+      <stop tag="28002" epochTime="48600000">13:30:00</stop>
+      <stop tag="28001" epochTime="49020000">13:37:00</stop>
+      <stop tag="28000_ar" epochTime="49380000">13:43:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28007" epochTime="51480000">14:18:00</stop>
+      <stop tag="28006" epochTime="51840000">14:24:00</stop>
+      <stop tag="28005" epochTime="53040000">14:44:00</stop>
+      <stop tag="28004" epochTime="53640000">14:54:00</stop>
+      <stop tag="28003" epochTime="54180000">15:03:00</stop>
+      <stop tag="28002" epochTime="54540000">15:09:00</stop>
+      <stop tag="28001" epochTime="54960000">15:16:00</stop>
+      <stop tag="28000_ar" epochTime="55260000">15:21:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28007" epochTime="56700000">15:45:00</stop>
+      <stop tag="28006" epochTime="57060000">15:51:00</stop>
+      <stop tag="28005" epochTime="58320000">16:12:00</stop>
+      <stop tag="28004" epochTime="58980000">16:23:00</stop>
+      <stop tag="28003" epochTime="59340000">16:29:00</stop>
+      <stop tag="28002" epochTime="59700000">16:35:00</stop>
+      <stop tag="28001" epochTime="60120000">16:42:00</stop>
+      <stop tag="28000_ar" epochTime="60480000">16:48:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="59220000">16:27:00</stop>
+      <stop tag="28006" epochTime="59640000">16:34:00</stop>
+      <stop tag="28005" epochTime="60840000">16:54:00</stop>
+      <stop tag="28004" epochTime="61500000">17:05:00</stop>
+      <stop tag="28003" epochTime="61860000">17:11:00</stop>
+      <stop tag="28002" epochTime="62220000">17:17:00</stop>
+      <stop tag="28001" epochTime="62580000">17:23:00</stop>
+      <stop tag="28000_ar" epochTime="62940000">17:29:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28007" epochTime="60720000">16:52:00</stop>
+      <stop tag="28006" epochTime="61080000">16:58:00</stop>
+      <stop tag="28005" epochTime="62340000">17:19:00</stop>
+      <stop tag="28004" epochTime="62880000">17:28:00</stop>
+      <stop tag="28003" epochTime="63240000">17:34:00</stop>
+      <stop tag="28002" epochTime="63840000">17:44:00</stop>
+      <stop tag="28001" epochTime="64200000">17:50:00</stop>
+      <stop tag="28000_ar" epochTime="64440000">17:54:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28007" epochTime="63240000">17:34:00</stop>
+      <stop tag="28006" epochTime="63600000">17:40:00</stop>
+      <stop tag="28005" epochTime="64920000">18:02:00</stop>
+      <stop tag="28004" epochTime="65520000">18:12:00</stop>
+      <stop tag="28003" epochTime="65880000">18:18:00</stop>
+      <stop tag="28002" epochTime="66180000">18:23:00</stop>
+      <stop tag="28001" epochTime="66720000">18:32:00</stop>
+      <stop tag="28000_ar" epochTime="67020000">18:37:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28007" epochTime="66300000">18:25:00</stop>
+      <stop tag="28006" epochTime="66720000">18:32:00</stop>
+      <stop tag="28005" epochTime="67920000">18:52:00</stop>
+      <stop tag="28004" epochTime="68520000">19:02:00</stop>
+      <stop tag="28003" epochTime="68820000">19:07:00</stop>
+      <stop tag="28002" epochTime="69180000">19:13:00</stop>
+      <stop tag="28001" epochTime="69540000">19:19:00</stop>
+      <stop tag="28000_ar" epochTime="69960000">19:26:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28007" epochTime="68880000">19:08:00</stop>
+      <stop tag="28006" epochTime="69240000">19:14:00</stop>
+      <stop tag="28005" epochTime="70440000">19:34:00</stop>
+      <stop tag="28004" epochTime="71040000">19:44:00</stop>
+      <stop tag="28003" epochTime="71460000">19:51:00</stop>
+      <stop tag="28002" epochTime="71820000">19:57:00</stop>
+      <stop tag="28001" epochTime="72180000">20:03:00</stop>
+      <stop tag="28000_ar" epochTime="72600000">20:10:00</stop>
+    </tr>
+  </route>
+  <route tag="398" title="Coaster" scheduleClass="20120819" serviceClass="Wednesday" direction="South to San Diego">
+    <header>
+      <stop tag="28000">Coaster Oceanside Transit Center</stop>
+      <stop tag="28001">Coaster Carlsbad Village Station</stop>
+      <stop tag="28002">Coaster Carlsbad Poinsettia Station</stop>
+      <stop tag="28003">Coaster Encinitas Station</stop>
+      <stop tag="28004">Coaster Solana Beach Station</stop>
+      <stop tag="28005">Coaster Sorrento Valley Station</stop>
+      <stop tag="28006">Coaster Old Town Station</stop>
+      <stop tag="28007_ar">Coaster Santa Fe Station</stop>
+    </header>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="18900000">05:15:00</stop>
+      <stop tag="28001" epochTime="19140000">05:19:00</stop>
+      <stop tag="28002" epochTime="19500000">05:25:00</stop>
+      <stop tag="28003" epochTime="19860000">05:31:00</stop>
+      <stop tag="28004" epochTime="20220000">05:37:00</stop>
+      <stop tag="28005" epochTime="20760000">05:46:00</stop>
+      <stop tag="28006" epochTime="22020000">06:07:00</stop>
+      <stop tag="28007_ar" epochTime="22500000">06:15:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28000" epochTime="21600000">06:00:00</stop>
+      <stop tag="28001" epochTime="21900000">06:05:00</stop>
+      <stop tag="28002" epochTime="22260000">06:11:00</stop>
+      <stop tag="28003" epochTime="22620000">06:17:00</stop>
+      <stop tag="28004" epochTime="22980000">06:23:00</stop>
+      <stop tag="28005" epochTime="23520000">06:32:00</stop>
+      <stop tag="28006" epochTime="24780000">06:53:00</stop>
+      <stop tag="28007_ar" epochTime="25200000">07:00:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28000" epochTime="24060000">06:41:00</stop>
+      <stop tag="28001" epochTime="24300000">06:45:00</stop>
+      <stop tag="28002" epochTime="24660000">06:51:00</stop>
+      <stop tag="28003" epochTime="25080000">06:58:00</stop>
+      <stop tag="28004" epochTime="25440000">07:04:00</stop>
+      <stop tag="28005" epochTime="26040000">07:14:00</stop>
+      <stop tag="28006" epochTime="27240000">07:34:00</stop>
+      <stop tag="28007_ar" epochTime="27720000">07:42:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28000" epochTime="26220000">07:17:00</stop>
+      <stop tag="28001" epochTime="26460000">07:21:00</stop>
+      <stop tag="28002" epochTime="26820000">07:27:00</stop>
+      <stop tag="28003" epochTime="27180000">07:33:00</stop>
+      <stop tag="28004" epochTime="27540000">07:39:00</stop>
+      <stop tag="28005" epochTime="28140000">07:49:00</stop>
+      <stop tag="28006" epochTime="29520000">08:12:00</stop>
+      <stop tag="28007_ar" epochTime="29880000">08:18:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="27720000">07:42:00</stop>
+      <stop tag="28001" epochTime="28020000">07:47:00</stop>
+      <stop tag="28002" epochTime="28380000">07:53:00</stop>
+      <stop tag="28003" epochTime="28680000">07:58:00</stop>
+      <stop tag="28004" epochTime="29100000">08:05:00</stop>
+      <stop tag="28005" epochTime="29700000">08:15:00</stop>
+      <stop tag="28006" epochTime="31080000">08:38:00</stop>
+      <stop tag="28007_ar" epochTime="31500000">08:45:00</stop>
+    </tr>
+    <tr blockID="39802">
+      <stop tag="28000" epochTime="33660000">09:21:00</stop>
+      <stop tag="28001" epochTime="33960000">09:26:00</stop>
+      <stop tag="28002" epochTime="34320000">09:32:00</stop>
+      <stop tag="28003" epochTime="34620000">09:37:00</stop>
+      <stop tag="28004" epochTime="34980000">09:43:00</stop>
+      <stop tag="28005" epochTime="35580000">09:53:00</stop>
+      <stop tag="28006" epochTime="36840000">10:14:00</stop>
+      <stop tag="28007_ar" epochTime="37380000">10:23:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="39900000">11:05:00</stop>
+      <stop tag="28001" epochTime="40200000">11:10:00</stop>
+      <stop tag="28002" epochTime="40560000">11:16:00</stop>
+      <stop tag="28003" epochTime="40980000">11:23:00</stop>
+      <stop tag="28004" epochTime="41280000">11:28:00</stop>
+      <stop tag="28005" epochTime="41940000">11:39:00</stop>
+      <stop tag="28006" epochTime="43140000">11:59:00</stop>
+      <stop tag="28007_ar" epochTime="43560000">12:06:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="52500000">14:35:00</stop>
+      <stop tag="28001" epochTime="52800000">14:40:00</stop>
+      <stop tag="28002" epochTime="53160000">14:46:00</stop>
+      <stop tag="28003" epochTime="53520000">14:52:00</stop>
+      <stop tag="28004" epochTime="53820000">14:57:00</stop>
+      <stop tag="28005" epochTime="54420000">15:07:00</stop>
+      <stop tag="28006" epochTime="55860000">15:31:00</stop>
+      <stop tag="28007_ar" epochTime="56340000">15:39:00</stop>
+    </tr>
+    <tr blockID="39803">
+      <stop tag="28000" epochTime="56040000">15:34:00</stop>
+      <stop tag="28001" epochTime="56400000">15:40:00</stop>
+      <stop tag="28002" epochTime="56820000">15:47:00</stop>
+      <stop tag="28003" epochTime="57240000">15:54:00</stop>
+      <stop tag="28004" epochTime="57600000">16:00:00</stop>
+      <stop tag="28005" epochTime="58200000">16:10:00</stop>
+      <stop tag="28006" epochTime="59460000">16:31:00</stop>
+      <stop tag="28007_ar" epochTime="59820000">16:37:00</stop>
+    </tr>
+    <tr blockID="39804">
+      <stop tag="28000" epochTime="61440000">17:04:00</stop>
+      <stop tag="28001" epochTime="61740000">17:09:00</stop>
+      <stop tag="28002" epochTime="62160000">17:16:00</stop>
+      <stop tag="28003" epochTime="62460000">17:21:00</stop>
+      <stop tag="28004" epochTime="62940000">17:29:00</stop>
+      <stop tag="28005" epochTime="63600000">17:40:00</stop>
+      <stop tag="28006" epochTime="64800000">18:00:00</stop>
+      <stop tag="28007_ar" epochTime="65220000">18:07:00</stop>
+    </tr>
+    <tr blockID="39801">
+      <stop tag="28000" epochTime="63600000">17:40:00</stop>
+      <stop tag="28001" epochTime="63900000">17:45:00</stop>
+      <stop tag="28002" epochTime="64260000">17:51:00</stop>
+      <stop tag="28003" epochTime="64620000">17:57:00</stop>
+      <stop tag="28004" epochTime="64980000">18:03:00</stop>
+      <stop tag="28005" epochTime="65820000">18:17:00</stop>
+      <stop tag="28006" epochTime="67140000">18:39:00</stop>
+      <stop tag="28007_ar" epochTime="67560000">18:46:00</stop>
+    </tr>
+  </route>
+</body>

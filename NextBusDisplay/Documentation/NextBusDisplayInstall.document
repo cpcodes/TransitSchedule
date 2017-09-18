@@ -1,0 +1,20 @@
+How to: Deploy a Web Project Using One-Click Publish in Visual Studio
+http://msdn.microsoft.com/en-us/library/dd465337.aspx
+
+&&&& < LIVE > &&&&&
+x "h:\My Documents\Visual Studio 2012\Projects\NextBusDisplay\NextBusDisplay.Publish.xml"
+  <publishProfile publishUrl="\\nctdgaov77\d$\WebApplications\TransitSchedule" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+
+&&&& <"???? Sandbox ????"> &&&&&
+  <publishProfile publishUrl="\\tnctdgaov11\c$\inetpub\wwwroot\TransitSchedule" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Sandbox" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+
+&&&& <"???? Debug ????"> &&...ERROR...&&&
+  <publishProfile publishUrl="\\w107670\c$\inetpub\wwwroot\TransitSchedule" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Debug" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+
+\\w107670\c$\inetpub\wwwroot\TransitSchedule
+\\tnctdgaov11\c$\inetpub\wwwroot\TransitSchedule
+\\nctdgaov77\d$\WebApplications\TransitSchedule
+Error   1   Web deployment task failed. (A value for the 'setAclUser' setting must be specified when the 'setAcl' provider is used with a physical path.)       0   0   NextBusDisplay
+Error   1   Web deployment task failed. (A value for the 'setAclUser' setting must be specified when the 'setAcl' provider is used with a physical path.)       0   0   NextBusDisplay
+w107670.nctd2k.local
+

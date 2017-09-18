@@ -1,0 +1,43 @@
+Num Direction   Depart  Platform                Days
+630 South Bound 315     Platform 1 - South End  Weekdays
+631 -- North bound m-f
+634 South Bound 360     Platform 1 - South End  Weekdays
+635 -- North bound m-f
+636 South Bound 401     Platform 1 - South End  Weekdays
+638 South Bound 437     Platform 2 - South End  Weekdays
+639 -- North bound m-f
+640 South Bound 462     Platform 2 - South End  Weekdays
+644 South Bound 579     Platform 1 - South End  Weekdays
+645 -- North bound m-f
+648 South Bound 665     Platform 1 - South End  Weekdays
+651 -- North bound m-f
+653 -- North bound m-f
+654 South Bound 875     Platform 1 - South End  Weekdays
+655 -- North bound m-f
+656 South Bound 934     Platform 1 - South End  Weekdays
+657 -- North bound m-f
+660 South Bound 1024    Platform 2 - South End  Weekdays
+661 -- North bound m-f
+662 South Bound 1060    Platform 1 - South End  Weekdays
+663 -- North bound m-f
+664 -- South bound Friday
+665 -- North bound m-f
+671 -- North bound Friday
+672 -- South bound Friday
+675 -- North bound Friday
+680 South Bound 511     Platform 1 - South End  Weekends
+681 -- North bound Saturday & Holidays
+684 South Bound 665     Platform 1 - South End  Weekends
+685 -- North bound Saturday & Holidays
+688 South Bound 830     Platform 1 - South End  Weekends
+689 -- North bound Saturday & Holidays
+690 -- South bound Saturday
+691 -- North bound Saturday
+692 South Bound 1035    Platform 2 - South End  Weekends
+693 -- North bound Saturday & Holidays
+696 -- South bound Saturday
+697 -- North bound Saturday
+
+SELECT Number, Direction, DepartTime, Platform, Days
+FROM NextBusDisplay.dbo.StaticTrains
+WHERE Train = 'Coaster'
