@@ -319,12 +319,12 @@ legend {
 
 .Delayed {
     color: #880099;
-    font-size: 4em
+    font-size: 3em
 }
 
 .OnTime {
     color: white;
-    font-size: 4em
+    font-size: 3em
 }
 
 .ArrivalMessage {
@@ -341,7 +341,7 @@ legend {
 
 .Platform {
     color: white;
-    font-size: 2em
+    font-size: 2.5em
 }
 
 .StopTitle {

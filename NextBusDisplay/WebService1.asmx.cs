@@ -54,7 +54,10 @@ namespace TransitSchedule
         [WebMethod]
         public string FetchSchedule(string queryString) // From AJAX in Default.aspx
         {
+            Debug.Print($"Entering FetchSchedule: {DateTime.Now}");
+            Debug.Print($"Calling BuildScheduleFromQueryString: {DateTime.Now}");
             BuildScheduleFromQueryString(queryString);
+            Debug.Print($"Finished BuildScheduleFromQueryString: {DateTime.Now}");
 
             DataClasses1DataContext dc1 = new DataClasses1DataContext();
 
@@ -75,8 +78,9 @@ namespace TransitSchedule
             //        <div>Next Departure Time</div>
             //        <div>Scheduled Platform</div>
             //    </div>";
-
+            Debug.Print($"Calling UpdateScheduleTimes: {DateTime.Now}");
             string content = UpdateScheduleTimes();
+            Debug.Print($"Finished UpdateScheduleTimes: {DateTime.Now}");
 
             string iFrame = "";
             string ServiceNotice = "<font color='red'><b>SERVICE NOTICE</b></font><br />";
@@ -92,6 +96,7 @@ namespace TransitSchedule
 
             string returnData = $"{HeaderTable}<tbody>{content}</tbody></table>{iFrame}";
             //string returnData = $"{HeaderTable}{content}<div>{iFrame}</div>";
+            Debug.Print($"Exiting FetchSchedule: {DateTime.Now}");
             return @returnData;
         }
 
