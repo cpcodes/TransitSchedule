@@ -805,13 +805,13 @@ namespace TransitSchedule
             // TODO rewrite as LINQ
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["NextBusDisplayConnectionString"].ConnectionString;
             string strSQL = "SELECT TOP 1 DisplayText FROM dbo.ServiceNotice " +
-                             "WHERE (DisplayFrom <= GETDATE() AND DisplayTo >= GETDATE()) " +
+                             "WHERE (DisplayFrom <= GETDATE() AND DisplayTo >= CONVERT(date, GETDATE())) " +
                              "ORDER BY DisplayFrom, DisplayTo;";
 
             if (id != "")
             {
                 strSQL = "SELECT TOP 1 DisplayText FROM dbo.ServiceNotice " +
-                         "WHERE (DisplayFrom <= GETDATE() AND DisplayTo >= GETDATE()) " +
+                         "WHERE (DisplayFrom <= GETDATE() AND DisplayTo >= CONVERT(date, GETDATE())) " +
                          "  AND ServiceNoticeID IN ('" + id.Trim() + "', '') " +
                          "ORDER BY ServiceNoticeID, DisplayFrom, DisplayTo;";
             }
