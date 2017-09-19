@@ -27,8 +27,6 @@ namespace TransitSchedule
     [System.Web.Script.Services.ScriptService]
     public class WebService1 : System.Web.Services.WebService
     {
-        // const string PlatformAsScheduled = "As Scheduled";
-        const string NEXTBUSFEED = "http://webservices.nextbus.com/service/publicXMLFeed?command=predictionsForMultiStops&a=nctd";
         static bool isReset = true;
 
         [WebMethod]
@@ -54,10 +52,7 @@ namespace TransitSchedule
         [WebMethod]
         public string FetchSchedule(string queryString) // From AJAX in Default.aspx
         {
-            Debug.Print($"Entering FetchSchedule: {DateTime.Now}");
-            Debug.Print($"Calling BuildScheduleFromQueryString: {DateTime.Now}");
             BuildScheduleFromQueryString(queryString);
-            Debug.Print($"Finished BuildScheduleFromQueryString: {DateTime.Now}");
 
             DataClasses1DataContext dc1 = new DataClasses1DataContext();
 
@@ -78,9 +73,7 @@ namespace TransitSchedule
             //        <div>Next Departure Time</div>
             //        <div>Scheduled Platform</div>
             //    </div>";
-            Debug.Print($"Calling UpdateScheduleTimes: {DateTime.Now}");
             string content = UpdateScheduleTimes();
-            Debug.Print($"Finished UpdateScheduleTimes: {DateTime.Now}");
 
             string iFrame = "";
             string ServiceNotice = "<font color='red'><b>SERVICE NOTICE</b></font><br />";
@@ -96,7 +89,6 @@ namespace TransitSchedule
 
             string returnData = $"{HeaderTable}<tbody>{content}</tbody></table>{iFrame}";
             //string returnData = $"{HeaderTable}{content}<div>{iFrame}</div>";
-            Debug.Print($"Exiting FetchSchedule: {DateTime.Now}");
             return @returnData;
         }
 
@@ -610,7 +602,7 @@ namespace TransitSchedule
                                     && x.StopID == schedule.Stop
                                     && days.Contains(x.Days)
                                 orderby Convert.ToInt32(x.DepartTime) ascending
-                                select x).Take(2);
+                                select x).Take(1); // Taking one but keeping Take rather than FirstOrDefault in case we decide to go back to keeping 2
             //  join t In dc1.StopDisplay on x.StopID == t.StopID
             //                                  && x.Direction.Contains(schedule.Direction)
             //                                  && x.StopID.Contains(schedule.Stop)
