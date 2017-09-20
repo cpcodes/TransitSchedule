@@ -8,7 +8,23 @@
     <link rel="Stylesheet" href="./Styles/Site.css" type="text/css" />
     <script src="Scripts/jquery-1.4.1.js" type="text/javascript"></script>
     <script type="text/javascript">
-
+        var TableHeader = `
+            <table class='ScheduleTable' width='100%' cellspacing='0'>
+                < col width= '34%' /><colgroup span='2' width='33%' />
+                <thead>
+                    <tr>
+                        <th>
+                            <div>Route / Stop</div>
+                        </th>
+                        <th>
+                            <div>Next Departure</div>
+                        </th>
+                        <th>
+                            <div>Scheduled Platform</div>
+                        </th>
+                    </tr>
+                </thead>
+        `;
         (function getTime() {
             $.ajax({
                 type: "POST",
@@ -30,11 +46,13 @@
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function (data) {
-                    $("#divScheduleData").html(data.d);
+                    $("#divScheduleData").html(TableHeader + data.d);
+                },
+                error: function () {
                     $("#divScheduleData").attr("color", "red");
                     $("#divScheduleData").attr("size", "4em");
+                    $("#divScheduleData").html(errorMessage);
                 },
-                error: function () { $("#divScheduleData").html(errorMessage); },
                 complete: function () {
                     setTimeout(getSchedule, 60000);
                 }

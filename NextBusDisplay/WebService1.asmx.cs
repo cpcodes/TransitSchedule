@@ -56,23 +56,6 @@ namespace TransitSchedule
 
             DataClasses1DataContext dc1 = new DataClasses1DataContext();
 
-            // Default Table Header - used only for endpoints
-            string HeaderTable =
-                @"<table class=""ScheduleTable"" width=""100%"" cellspacing='0'>
-                    <col width='34%' /><colgroup span='2' width='33%' />
-                    <thead>
-                        <tr>
-                            <th><div>Route / Stop</div></th>
-                            <th><div>Next Departure Time</div></th>
-                            <th><div>Scheduled Platform</div></th>
-                        </tr>
-                    </thead>";
-            //string HeaderTable =
-            //    @"<div class='ScheduleHeader'>
-            //        <div>Route</div>
-            //        <div>Next Departure Time</div>
-            //        <div>Scheduled Platform</div>
-            //    </div>";
             string content = UpdateScheduleTimes();
 
             string iFrame = "";
@@ -87,8 +70,7 @@ namespace TransitSchedule
                         </tr>
                     </table>";
 
-            string returnData = $"{HeaderTable}<tbody>{content}</tbody></table>{iFrame}";
-            //string returnData = $"{HeaderTable}{content}<div>{iFrame}</div>";
+            string returnData = $"<tbody>{content}</tbody></table>{iFrame}";
             return @returnData;
         }
 
