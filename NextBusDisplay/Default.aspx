@@ -10,7 +10,9 @@
     <script type="text/javascript">
         var TableHeader = `
             <table class='ScheduleTable' width='100%' cellspacing='0'>
-                < col width= '34%' /><colgroup span='2' width='33%' />
+                <col style="width:34%">
+                <col style="width:33%">
+                <col style="width:33%">
                 <thead>
                     <tr>
                         <th>
