@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Util;
 using System.Web.Services;
 using System.Xml;
 using System.Web.UI;
@@ -58,19 +59,7 @@ namespace TransitSchedule
 
             string content = UpdateScheduleTimes();
 
-            string iFrame = "";
-            string ServiceNotice = "<font color='red'><b>SERVICE NOTICE</b></font><br />";
-
-            string txtServiceNotice = GetPlatformServiceNotice("");
-            if (txtServiceNotice.Trim() != "")
-                iFrame = $@"<br />
-                    <table width='100%' height='200px' cellspacing='0'>
-                        <tr>
-                            <td class='ServiceNoticeStyle'>{ServiceNotice}{txtServiceNotice}</td>
-                        </tr>
-                    </table>";
-
-            string returnData = $"<tbody>{content}</tbody></table>{iFrame}";
+            string returnData = $"<tbody>{content}</tbody></table>";
             return @returnData;
         }
 

@@ -1323,6 +1323,11 @@ namespace TransitSchedule
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
-	}
+
+        internal static string ServicesHTMLRows()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
 #pragma warning restore 1591

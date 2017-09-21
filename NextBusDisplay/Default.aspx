@@ -27,6 +27,15 @@
                     </tr>
                 </thead>
         `;
+        var NoticeTableHeader = `
+        <table width='100%' height='200px' cellspacing='0'>
+            <thead>
+                <tr>
+                    <td class='ServiceNoticeStyle'><font color='red'><b>SERVICE NOTICE</b></font><br /></td>
+                </tr>
+            </thead>
+            <tbody>
+        `;
         (function getTime() {
             $.ajax({
                 type: "POST",
@@ -59,6 +68,21 @@
                     setTimeout(getSchedule, 60000);
                 }
             });
+
+            $.ajax({
+                type: "POST",
+                url: "Notices.asmx/GetServiceNotices",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    $("#divNoticeTable").html(NoticeTableHeader + data.d + "</tbody></table>");
+                },
+                error: function (object, status, errorMessage) {
+                    $("#divNoticeTable").attr("color", "red");
+                    $("#divNoticeTable").attr("size", "4em");
+                    $("#divNoticeTable").html(status + ": " + errorMessage);
+                }
+            });
         })();
 
         function getQueryString() {
@@ -83,6 +107,8 @@
         </table>
         <!-- Page Data Table Header -->
         <div id="divScheduleData" />
+        <br />
+        <div id="divNoticeTable" />
     </form>
 </body>
 </html>
