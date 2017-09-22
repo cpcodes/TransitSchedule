@@ -262,11 +262,11 @@ legend {
     width: 100%;
 }
 
-.adminTable tr td {
-    font-size: 2em;
-    padding: 10px;
-    border-bottom: 10px solid black;
-}
+    .adminTable tr td {
+        font-size: 2em;
+        padding: 10px;
+        border-bottom: 10px solid black;
+    }
 
 .PlatformOverrideDropdown {
     font-size: 1.0em;
@@ -289,17 +289,15 @@ legend {
     font-size: 4em
 }
 
-.ScheduleTable tr {
-    width: 33%
+
+
+.ScheduleTable tr:nth-child(even) {
+    background: #005daa
 }
 
-    .ScheduleTable tr:nth-child(even) {
-        background: #005daa
-    }
-
-    .ScheduleTable tr:nth-child(odd) {
-        background: #008c99
-    }
+.ScheduleTable tr:nth-child(odd) {
+    background: #008c99
+}
 
 .ScheduleTable th {
     font-size: 4em;
@@ -308,10 +306,26 @@ legend {
     font-weight: normal
 }
 
+    .ScheduleTable th:nth-child(2n) {
+        padding: 0.5em 0em 0em 3em
+    }
+
+    .ScheduleTable th:nth-child(3n) {
+        padding: 0.5em 0em 0em 1.5em
+    }
+
 .ScheduleTable td {
-    padding: .5em 1em 0 1em;
+    padding: 1em 0em 1em 1em;
     font-size: 2em
 }
+
+    .ScheduleTable td:nth-child(2n) {
+        padding: 0em 0em 0em 6.9em
+    }
+
+    .ScheduleTable td:nth-child(3n) {
+        padding: 0em 0em 0em 4.2em
+    }
 
 .ScheduleTable img {
     width: 100%
@@ -325,7 +339,7 @@ legend {
 .OnTime {
     color: white;
     font-size: 3em;
-    text-align: center
+    text-align: left
 }
 
 .ArrivalMessage {
@@ -342,7 +356,7 @@ legend {
 
 .Platform {
     color: white;
-    font-size: 2.5em
+    font-size: 3em
 }
 
 .StopTitle {
@@ -352,20 +366,23 @@ legend {
 
 .LogoMessage {
     font-size: 1em;
-    line-height: 1em;
+    line-height: 5em;
     display: none
 }
 
 .HeaderTable {
     font-size: 2em;
+    background: #ffffff
 }
 
 .NCTDLogo {
-    width: 800px
+    padding: 1em 0em 1em 9em
 }
 
 .ClockText {
     font-size: 4em;
-    color: #ffffff;
-    text-align: right
+    color: #005daa;
+    text-align: right;
+    padding: 0 3em 0 0;
+    font-weight: normal
 }

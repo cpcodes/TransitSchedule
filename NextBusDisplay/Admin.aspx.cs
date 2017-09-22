@@ -70,10 +70,8 @@ namespace TransitSchedule
                 DropDownList dl = new DropDownList();
                 dl.CssClass = "PlatformOverrideDropdown";
                 dl.Items.Add("As Scheduled");
-                dl.Items.Add("Platform 1 - North End");
-                dl.Items.Add("Platform 1 - South End");
-                dl.Items.Add("Platform 2 - North End");
-                dl.Items.Add("Platform 2 - South End");
+                dl.Items.Add("Platform 1");
+                dl.Items.Add("Platform 2");
                 dl.Items.Add("Platform 3");
                 //dl.Items.Add("Platform 3 South");
                 //dl.Items.Add("Platform 4 North");

@@ -59,7 +59,7 @@ namespace TransitSchedule
 
             string content = UpdateScheduleTimes();
 
-            string returnData = $"<tbody>{content}</tbody></table>";
+            string returnData = $"<tbody>{content}</tbody>";
             return @returnData;
         }
 
