@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.aspx" />
+    <Content Include="App_Data\TransitScheduleDB.sql" />
     <Content Include="Content\bp\ie.css" />
     <Content Include="Content\bp\print.css" />
     <Content Include="Content\bp\screen.css" />
@@ -236,9 +237,7 @@
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="DataClasses1.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
