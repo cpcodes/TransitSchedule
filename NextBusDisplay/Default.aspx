@@ -27,6 +27,7 @@
                     </tr>\
                 </thead>\
         ";
+        // Remove this variable if Notices are broken out to separate page (1/3)
         var NoticeTableHeader = "\
         <table width='99%' height='180px' cellspacing='0'>\
             <thead>\
@@ -65,7 +66,7 @@
                     setTimeout(getSchedule, 60000);
                 }
             });
-
+            // Remove this AJAX call if Notices are broken out to separate page (2/3)
             $.ajax({
                 type: "POST",
                 url: "Notices.asmx/GetServiceNotices",
@@ -102,6 +103,7 @@
         </table>
         <!-- Page Data Table Header -->
         <div id="divScheduleData"></div>
+        <!-- Remove this br and div tag if Notices are broken out to separate page (3/3) -->
         <br />
         <div id="divNoticeTable"></div>
     </form>
