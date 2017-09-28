@@ -73,7 +73,8 @@
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function (data) {
-                    $("#divNoticeTable").html(NoticeTableHeader + "<tbody>" + data.d + "</tbody></table>");
+                    if (data.d == "") $("#divNoticeTable").html("");
+                    else $("#divNoticeTable").html(NoticeTableHeader + "<tbody>" + data.d + "</tbody></table>");
                 },
                 error: function (object, status, errorMessage) {
                     $("#divNoticeTable").html("<font color='red' size='4em'>" + status + ": " + errorMessage + "</font>");

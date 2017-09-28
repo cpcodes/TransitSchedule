@@ -24,12 +24,11 @@
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function (data) {
-                    $("#divNoticeTable").html(TableHeader + data.d + "</tbody></table>");
+                    if (data.d == "") $("#divNoticeTable").html("");
+                    else $("#divNoticeTable").html(TableHeader + data.d + "</tbody></table>");
                 },
                 error: function (object, status, errorMessage) {
-                    $("#divNoticeTable").attr("color", "red");
-                    $("#divNoticeTable").attr("size", "4em");
-                    $("#divNoticeTable").html(status + ": " + errorMessage);
+                    $("#divNoticeTable").html("<font color='red' size='4em'>" + status + ": " + errorMessage + "</font>");
                 },
                 complete: function () {
                     setTimeout(getNotices, 60000);

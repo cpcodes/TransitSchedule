@@ -67,7 +67,8 @@ namespace NextBusDisplay
                         noticeTableRows += $"<tr><td class='ServiceNoticeStyle'>{notice}</td></tr>";
                     }
                 }
-                else noticeTableRows = "<tr><td class='ServiceNoticeStyle'>No Notices</td></tr>";
+                // else noticeTableRows = "<tr><td class='ServiceNoticeStyle'>No Notices</td></tr>";
+                else noticeTableRows = "";
 
                 reader.Close();
             }
