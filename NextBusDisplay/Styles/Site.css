@@ -359,6 +359,15 @@ legend {
     font-size: 3em
 }
 
+/*
+    Set to whatever format you want the overridden platform to show as
+    Only functions if "PLATFORM" is in all caps
+*/
+.PlatformOverride {
+    color: white;
+    font-size: 3em
+}
+
 .StopTitle {
     font-size: 1em;
     display: none

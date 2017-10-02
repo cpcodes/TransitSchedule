@@ -93,8 +93,9 @@ namespace TransitSchedule
                 {
                     foreach (PlatformOverride po in overrides)
                     {
-                        if (schedule.Route == po.Route && schedule.Stop.ToString() == po.Stop.ToString())
-                        {
+                        //if (schedule.Route == po.Route && schedule.Stop.ToString() == po.Stop.ToString())
+                        if (schedule.Stop.ToString() == po.Stop.ToString())
+                            {
                             if (po.Platform != "As Scheduled") // Consolidate into single if statement or keep in case I want to check for po.Departure?
                             {
                                 schedule.Platform = po.Platform;
@@ -129,6 +130,7 @@ namespace TransitSchedule
         private string CreateScheduleRow(Schedule schedule)
         {
             string timeStyle = schedule.isDelayed ? "Delayed" : "OnTime";
+            string platformStyle =schedule.Platform.Contains("PLATFORM")?"PlatformOverride":"Platform";
 
             return
             //    $@"<div class=""ScheduleRow"">
@@ -156,7 +158,7 @@ namespace TransitSchedule
                             <div id=""divDepartureMsg-@alt"" class=""DepartureMessage"">{schedule.DepartureMessage}</div>
                         </td>
                         <td>
-                            <div class=""Platform"">{schedule.Platform}</div>
+                            <div class=""{platformStyle}"">{schedule.Platform}</div>
                         </td>
                     </tr>";
         }
@@ -675,6 +677,7 @@ namespace TransitSchedule
                         // schedule.Arrival = (Convert.ToDateTime(schedule.Departure).AddMinutes(LayoverMinutes)).ToShortTimeString();
                         schedule.Arrival = (int.Parse(schedule.Departure) + LayoverMinutes).ToString();
                         schedule.Platform = statictrain.Platform;
+                        schedule.Stop = statictrain.StopID;
                         isFirst = false;
                     }
                     else

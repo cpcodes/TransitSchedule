@@ -80,6 +80,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.aspx" />
+    <Content Include="Content\Images\coaster-logo-orig.png" />
+    <Content Include="Content\Images\NCTD-Formal-Logo-Brightened.png" />
     <Content Include="SQL\TransitScheduleDB.sql" />
     <Content Include="Content\bp\ie.css" />
     <Content Include="Content\bp\print.css" />
@@ -90,7 +92,6 @@
     <Content Include="Content\Images\amtrak-logo-sb.png" />
     <Content Include="Content\Images\amtrak-logo.png" />
     <Content Include="Content\Images\breeze-logo.png" />
-    <Content Include="Content\Images\coaster-logo-800.png" />
     <Content Include="Content\Images\coaster-logo.png" />
     <Content Include="Content\Images\construction-screen.jpg" />
     <Content Include="Content\Images\logo.png" />
