@@ -130,7 +130,11 @@ namespace TransitSchedule
         private string CreateScheduleRow(Schedule schedule)
         {
             string timeStyle = schedule.isDelayed ? "Delayed" : "OnTime";
-            string platformStyle =schedule.Platform.Contains("PLATFORM")?"PlatformOverride":"Platform";
+            string platformStyle="";
+            if (schedule.Platform != null)
+            {
+                platformStyle =schedule.Platform.Contains("PLATFORM")?"PlatformOverride":"Platform";
+            }
 
             return
             //    $@"<div class=""ScheduleRow"">
