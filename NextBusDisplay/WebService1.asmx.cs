@@ -333,47 +333,53 @@ namespace TransitSchedule
                     schedule.Arrival2 = "Tomorrow";
                     schedules.Add(schedule);
                 }
-                else if (routeUpper == "AMTRAK")
+                else if (routeUpper.StartsWith("AMTRAK"))
                 {
-                    schedule = new Schedule();
-                    schedule.Route = route;
-                    schedule.Stop = stopId;
-                    schedule.RouteType = Schedule.RouteTypes.Amtrak;
-                    schedule.Agency = "amtrak";
-                    schedule.Logo = "amtrak-logo-nb.png";
-                    schedule.LogoMessage = "";
-                    schedule.Direction = "North Bound";
-                    schedule.LogoStyle = "width:23em";
-                    schedule.StopTitle = "Oceanside Transit Center";
-                    //schedule.DebugMessage = " false";
-                    schedule.useNextBusEstimate = false;
-                    schedule.useNextBusEstimate2 = false;
-                    schedule.ScheduleId = "";
-                    GetStaticScheduleExternal(schedule);
-                    // Turn Off the Second Schedule
-                    schedule.Departure2 = "Tomorrow";
-                    schedule.Arrival2 = "Tomorrow";
-                    schedules.Add(schedule);
+                    if (routeUpper == "AMTRAK" || routeUpper == "AMTRAKNB")
+                    {
+                        schedule = new Schedule();
+                        schedule.Route = route;
+                        schedule.Stop = stopId;
+                        schedule.RouteType = Schedule.RouteTypes.Amtrak;
+                        schedule.Agency = "amtrak";
+                        schedule.Logo = "amtrak-logo-nb.png";
+                        schedule.LogoMessage = "";
+                        schedule.Direction = "North Bound";
+                        schedule.LogoStyle = "width:23em";
+                        schedule.StopTitle = "Oceanside Transit Center";
+                        //schedule.DebugMessage = " false";
+                        schedule.useNextBusEstimate = false;
+                        schedule.useNextBusEstimate2 = false;
+                        schedule.ScheduleId = "";
+                        GetStaticScheduleExternal(schedule);
+                        // Turn Off the Second Schedule
+                        schedule.Departure2 = "Tomorrow";
+                        schedule.Arrival2 = "Tomorrow";
+                        schedules.Add(schedule);
+                    }
 
-                    schedule = new Schedule();
-                    schedule.Route = route;
-                    schedule.Stop = stopId;
-                    schedule.RouteType = Schedule.RouteTypes.Amtrak;
-                    schedule.Agency = "amtrak";
-                    schedule.Logo = "amtrak-logo-sb.png";
-                    schedule.LogoMessage = "";
-                    schedule.Direction = "South Bound";
-                    schedule.StopTitle = "Oceanside Transit Center";
-                    schedule.LogoStyle = "width:23em";
-                    //schedule.DebugMessage = " false";
-                    schedule.useNextBusEstimate = false;
-                    schedule.useNextBusEstimate2 = false;
-                    schedule.ScheduleId = "";
-                    GetStaticScheduleExternal(schedule);
-                    // Turn Off the Second Schedule
-                    schedule.Departure2 = "Tomorrow";
-                    schedule.Arrival2 = "Tomorrow";
-                    schedules.Add(schedule);
+                    if (routeUpper == "AMTRAK" || routeUpper == "AMTRAKSB")
+                    {
+                        schedule = new Schedule();
+                        schedule.Route = route;
+                        schedule.Stop = stopId;
+                        schedule.RouteType = Schedule.RouteTypes.Amtrak;
+                        schedule.Agency = "amtrak";
+                        schedule.Logo = "amtrak-logo-sb.png";
+                        schedule.LogoMessage = "";
+                        schedule.Direction = "South Bound";
+                        schedule.StopTitle = "Oceanside Transit Center";
+                        schedule.LogoStyle = "width:23em";
+                        //schedule.DebugMessage = " false";
+                        schedule.useNextBusEstimate = false;
+                        schedule.useNextBusEstimate2 = false;
+                        schedule.ScheduleId = "";
+                        GetStaticScheduleExternal(schedule);
+                        // Turn Off the Second Schedule
+                        schedule.Departure2 = "Tomorrow";
+                        schedule.Arrival2 = "Tomorrow";
+                        schedules.Add(schedule);
+                    }
                 }
                 else if (routeUpper == "301")
                 {

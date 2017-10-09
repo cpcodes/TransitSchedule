@@ -33,7 +33,7 @@ namespace TransitSchedule
             tr.Cells.Add(new TableCell() { Text = "Route" });
             tr.Cells.Add(new TableCell() { Text = "Stop" });
             tr.Cells.Add(new TableCell() { Text = "Platform" });
-            tr.Cells.Add(new TableCell() { Text = "Using NextBus Estimates" });
+            //tr.Cells.Add(new TableCell() { Text = "Using NextBus Estimates" });
 
             foreach (PlatformOverride pd in allPlatforms)
             {
@@ -73,9 +73,10 @@ namespace TransitSchedule
                 dl.Items.Add("Platform 1");
                 dl.Items.Add("Platform 2");
                 dl.Items.Add("Platform 3");
-                dl.Items.Add("PLATFORM 1");
-                dl.Items.Add("PLATFORM 2");
-                dl.Items.Add("PLATFORM 3");
+                dl.Items.Add("CANCELLED");
+                //dl.Items.Add("PLATFORM 1");
+                //dl.Items.Add("PLATFORM 2");
+                //dl.Items.Add("PLATFORM 3");
                 //dl.Items.Add("Platform 3 South");
                 //dl.Items.Add("Platform 4 North");
                 //dl.Items.Add("Platform 4 South");
@@ -92,7 +93,7 @@ namespace TransitSchedule
                 btCell.Controls.Add(dl);
                 tr.Cells.Add(btCell);
                 dl.SelectedValue = pd.Platform;
-                tr.Cells.Add(new TableCell() { Text = "&nbsp;" });
+                //tr.Cells.Add(new TableCell() { Text = "&nbsp;" });
                 //}
             }
 
