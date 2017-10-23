@@ -47,7 +47,31 @@ namespace TransitSchedule
         [WebMethod]
         public string GetTime()
         {
-            return DateTime.Now.ToShortTimeString();
+            return CurrentTime.ToShortTimeString();
+        }
+
+        DateTime _currentTime = DateTime.MinValue;
+
+        public DateTime CurrentTime
+        {
+            get
+            {
+
+                if (_currentTime == DateTime.MinValue)
+                {
+
+                    _currentTime = DateTime.Now;
+#if DEBUG
+                    // Uncomment the below line to test the display for specific time of day or day of week/year
+                    // The #if statement will prevent this from accidentally carrying over into production if you forget to re-comment
+                    _currentTime = DateTime.Parse("2017-11-23 01:01");
+#endif
+                }
+
+                    return _currentTime;
+            }
+
+            set => _currentTime = value;
         }
 
         [WebMethod]
@@ -65,18 +89,8 @@ namespace TransitSchedule
 
         private string UpdateScheduleTimes()
         {
-            int minuteNow = (DateTime.Now.Hour * 60) + DateTime.Now.Minute;
-            List<string> days = GetDaysEnumeration();
+            int minuteNow = (CurrentTime.Hour * 60) + CurrentTime.Minute;
             StringBuilder sb = new StringBuilder();
-
-            // If today's date exists in the Holiday table (count=1) then today is a holiday.
-            DataClasses1DataContext dc2 = new DataClasses1DataContext();
-            var tbl = (from h in dc2.Holidays
-                       where h.Holiday == DateTime.Now
-                       select h.Holiday).Count();
-
-            bool isHoliday = tbl > 0 ? true : false;
-            dc2.Dispose();
 
             List<PlatformOverride> overrides = GetAllPlatformOverrides();    // Load The Platform Override Data From The Database
 
@@ -103,16 +117,6 @@ namespace TransitSchedule
                             // TODO once we allow update of time in Overrides, put if statement here to set schedule.isDelayed to true
                         }
                     }
-                }
-
-                // TODO Since Amtrak and Metrolink are exceptions to a number of rules, maybe set this up as a gate clause for multiple rules and avoid DB hits.
-                if (isHoliday && (schedule.Route.ToLower() != "amtrak" && schedule.Route.ToLower() != "metrolink"))
-                {
-                    schedule.DebugMessage = schedule.DebugMessage + " Holiday";
-                    days = new List<string>();
-                    days.Add("Weekends");
-                    days.Add("Fri-Sun");
-                    days.Add("Sunday");
                 }
 
                 // There is no concept of being delayed - PlatformOverride only accounts for changes in platform, not departure time
@@ -176,7 +180,7 @@ namespace TransitSchedule
             // Get Short Time String From Minutes Since Midnight
             bool isNumeric = int.TryParse(MidnightMinutes, out int Minutes);
             if (isNumeric)
-            { return DateTime.Today.AddMinutes(Minutes).ToShortTimeString(); }
+            { return CurrentTime.Date.AddMinutes(Minutes).ToShortTimeString(); }
             else
             {
                 // If Not Numeric - Return The Input String
@@ -338,7 +342,7 @@ namespace TransitSchedule
                     if (routeUpper == "AMTRAK" || routeUpper == "AMTRAKNB")
                     {
                         schedule = new Schedule();
-                        schedule.Route = route;
+                        schedule.Route = "amtrak";
                         schedule.Stop = stopId;
                         schedule.RouteType = Schedule.RouteTypes.Amtrak;
                         schedule.Agency = "amtrak";
@@ -361,7 +365,7 @@ namespace TransitSchedule
                     if (routeUpper == "AMTRAK" || routeUpper == "AMTRAKSB")
                     {
                         schedule = new Schedule();
-                        schedule.Route = route;
+                        schedule.Route = "amtrak";
                         schedule.Stop = stopId;
                         schedule.RouteType = Schedule.RouteTypes.Amtrak;
                         schedule.Agency = "amtrak";
@@ -569,8 +573,8 @@ namespace TransitSchedule
             // All times in the database are departure times - Calculate The Arrival Time Based On A Slow Load
             // NOTE: Datafeed  epochTime Is In Milliseconds - Use Left(epochTime, 10) To Calculate UTCTime
             int LayoverMinutes = int.Parse(System.Configuration.ConfigurationManager.AppSettings["LayoverMinutes"]); // -5
-            List<string> days = GetDaysEnumeration();
-            int minuteNow = (DateTime.Now.Hour * 60) + DateTime.Now.Minute;
+            List<string> days = GetDaysEnumeration(schedule.Route);
+            int minuteNow = (CurrentTime.Hour * 60) + CurrentTime.Minute;
             DataClasses1DataContext dc1 = new DataClasses1DataContext();
 
             // By Default Everything Is Tomorrow
@@ -655,8 +659,8 @@ namespace TransitSchedule
             // All times in the database are departure times - Calculate The Arrival Time Based On A Slow Load
             // NOTE: Datafeed  epochTime Is In Milliseconds - Use Left(epochTime, 10) To Calculate UTCTime
             int LayoverMinutes = int.Parse(System.Configuration.ConfigurationManager.AppSettings["LayoverMinutes"]); // -5
-            List<string> days = GetDaysEnumeration();
-            int minuteNow = (DateTime.Now.Hour * 60) + DateTime.Now.Minute;
+            List<string> days = GetDaysEnumeration(schedule.Route);
+            int minuteNow = (CurrentTime.Hour * 60) + CurrentTime.Minute;
             DataClasses1DataContext dc1 = new DataClasses1DataContext();
 
             // By Default Everything Is Tomorrow
@@ -704,47 +708,62 @@ namespace TransitSchedule
             }
         }
 
-        private List<string> GetDaysEnumeration() // TODO Should probably update DB to store a bit field or comma seperated list for the days
+        private List<string> GetDaysEnumeration(string route) // TODO Should probably update DB to store a bit field or comma seperated list for the days
         {
             List<string> days = new List<string>();
+            // If today's date exists in the Holiday table (count=1) then today is a holiday.
+            DataClasses1DataContext dc2 = new DataClasses1DataContext();
+            var tbl = (from h in dc2.Holidays
+                       where h.Holiday == CurrentTime
+                       select h.Holiday).Count();
+
+            bool isHoliday = tbl > 0 ? true : false;
+            dc2.Dispose();
             // Added enumerated days to prepare for auto download from NextBus - Each Day Will Be Enumerated By Itself
-            if (DateTime.Now.DayOfWeek == DayOfWeek.Monday)
+            if (isHoliday && (route.ToLower() != "amtrak" && route.ToLower() != "metrolink"))
+            {
+                days = new List<string>();
+                days.Add("Weekends");
+                days.Add("Fri-Sun");
+                days.Add("Sunday");
+            }
+            else if (CurrentTime.DayOfWeek == DayOfWeek.Monday)
             {
                 days.Add("Monday");
                 days.Add("Weekdays");
                 days.Add("Mo-Th");
             }
-            else if (DateTime.Now.DayOfWeek == DayOfWeek.Tuesday)
+            else if (CurrentTime.DayOfWeek == DayOfWeek.Tuesday)
             {
                 days.Add("Tuesday");
                 days.Add("Weekdays");
                 days.Add("Mo-Th");
             }
-            else if (DateTime.Now.DayOfWeek == DayOfWeek.Wednesday)
+            else if (CurrentTime.DayOfWeek == DayOfWeek.Wednesday)
             {
                 days.Add("Wednesday");
                 days.Add("Weekdays");
                 days.Add("Mo-Th");
             }
-            else if (DateTime.Now.DayOfWeek == DayOfWeek.Thursday)
+            else if (CurrentTime.DayOfWeek == DayOfWeek.Thursday)
             {
                 days.Add("Thursday");
                 days.Add("Weekdays");
                 days.Add("Mo-Th");
             }
-            else if (DateTime.Now.DayOfWeek == DayOfWeek.Friday)
+            else if (CurrentTime.DayOfWeek == DayOfWeek.Friday)
             {
                 days.Add("Friday");
                 days.Add("Weekdays");
                 days.Add("Fri-Sun");
             }
-            else if (DateTime.Now.DayOfWeek == DayOfWeek.Saturday)
+            else if (CurrentTime.DayOfWeek == DayOfWeek.Saturday)
             {
                 days.Add("Saturday");
                 days.Add("Weekends");
                 days.Add("Fri-Sun");
             }
-            else if (DateTime.Now.DayOfWeek == DayOfWeek.Sunday)
+            else if (CurrentTime.DayOfWeek == DayOfWeek.Sunday)
             {
                 days.Add("Sunday");
                 days.Add("Weekends");
