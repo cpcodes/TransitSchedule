@@ -64,7 +64,7 @@ namespace TransitSchedule
 #if DEBUG
                     // Uncomment the below line to test the display for specific time of day or day of week/year
                     // The #if statement will prevent this from accidentally carrying over into production if you forget to re-comment
-                    _currentTime = DateTime.Parse("2017-12-25 13:01");
+                    _currentTime = DateTime.Parse("2018-07-04 13:01");
 #endif
                 }
 
@@ -718,24 +718,19 @@ namespace TransitSchedule
                        select h.Holiday).Count();
 
             bool isHoliday = tbl > 0 ? true : false;
-#if DEBUG
-            // Logs info about what schedule is being displayed
-            Debug.Print($"Schedule for {route}");
-            if (isHoliday)
-            {
-                var holidayName = (from h in dc2.Holidays
-                                   where h.Holiday == CurrentTime
-                                   select h.Description).First();
-                Debug.Print($"Today is a Holiday - {holidayName}");
-            }
-#endif
+            string holidayName = string.Empty;
+            if (isHoliday) holidayName = (from h in dc2.Holidays
+                               where h.Holiday == CurrentTime
+                               select h.Description).First();
+
             dc2.Dispose();
             // Added enumerated days to prepare for auto download from NextBus - Each Day Will Be Enumerated By Itself
             if (isHoliday && (route.ToLower() != "amtrak"))
             {
                 days.Add("Weekends");
                 days.Add("Fri-Sun");
-                days.Add("Sunday");
+                if (route.ToLower() == "398" && holidayName == "Independence Day") days.Add("Saturday"); // Special rule for coaster
+                else days.Add("Sunday");
             }
             else if (CurrentTime.DayOfWeek == DayOfWeek.Monday)
             {
@@ -782,6 +777,11 @@ namespace TransitSchedule
 
 #if DEBUG
             // Logs info about what schedule is being displayed
+            Debug.Print($"Schedule for {route}");
+            if (isHoliday)
+            {
+                Debug.Print($"Today is a Holiday - {holidayName}");
+            }
             Debug.Print("The following weekdays are being used for the schedule");
             Debug.Print(String.Join(", ", days));
             Debug.Print("===============================");
