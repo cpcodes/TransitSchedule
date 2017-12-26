@@ -64,7 +64,7 @@ namespace TransitSchedule
 #if DEBUG
                     // Uncomment the below line to test the display for specific time of day or day of week/year
                     // The #if statement will prevent this from accidentally carrying over into production if you forget to re-comment
-                    _currentTime = DateTime.Parse("2017-11-23 01:01");
+                    _currentTime = DateTime.Parse("2017-12-25 13:01");
 #endif
                 }
 
@@ -718,11 +718,21 @@ namespace TransitSchedule
                        select h.Holiday).Count();
 
             bool isHoliday = tbl > 0 ? true : false;
+#if DEBUG
+            // Logs info about what schedule is being displayed
+            Debug.Print($"Schedule for {route}");
+            if (isHoliday)
+            {
+                var holidayName = (from h in dc2.Holidays
+                                   where h.Holiday == CurrentTime
+                                   select h.Description).First();
+                Debug.Print($"Today is a Holiday - {holidayName}");
+            }
+#endif
             dc2.Dispose();
             // Added enumerated days to prepare for auto download from NextBus - Each Day Will Be Enumerated By Itself
-            if (isHoliday && (route.ToLower() != "amtrak" && route.ToLower() != "metrolink"))
+            if (isHoliday && (route.ToLower() != "amtrak"))
             {
-                days = new List<string>();
                 days.Add("Weekends");
                 days.Add("Fri-Sun");
                 days.Add("Sunday");
@@ -769,6 +779,13 @@ namespace TransitSchedule
                 days.Add("Weekends");
                 days.Add("Fri-Sun");
             }
+
+#if DEBUG
+            // Logs info about what schedule is being displayed
+            Debug.Print("The following weekdays are being used for the schedule");
+            Debug.Print(String.Join(", ", days));
+            Debug.Print("===============================");
+#endif
             return days;
         }
 
