@@ -208,5 +208,6 @@ namespace TransitSchedule
             set { ScheduleID2 = value; }
         }
 
+        public bool isOverridden { get; set; }
     }
 }

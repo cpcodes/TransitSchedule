@@ -194,17 +194,16 @@ namespace TransitSchedule
             }
         }
 
-        bool altRow = false;
+        bool altRow = true;
         private string GetAlternateRowColor()
         {
+            altRow = !altRow;
             if (altRow)
             {
-                altRow = !altRow;
                 return "#005daa";
             }
             else
             {
-                altRow = !altRow;
                 return "#008c99";
             }
 

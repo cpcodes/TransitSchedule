@@ -100,6 +100,7 @@ namespace TransitSchedule
 
                 //schedule.DebugMessage = string.Empty;
                 schedule.isDelayed = false;
+                schedule.isOverridden = false;
                 // schedule.Direction = string.Empty;
 
                 // TODO redo this using a table lookup rather than a nested iteration
@@ -113,6 +114,7 @@ namespace TransitSchedule
                             if (po.Platform != "As Scheduled") // Consolidate into single if statement or keep in case I want to check for po.Departure?
                             {
                                 schedule.Platform = po.Platform;
+                                schedule.isOverridden = true;
                             }
                             // TODO once we allow update of time in Overrides, put if statement here to set schedule.isDelayed to true
                         }
@@ -135,9 +137,14 @@ namespace TransitSchedule
         {
             string timeStyle = schedule.isDelayed ? "Delayed" : "OnTime";
             string platformStyle="";
+            string depTime="";
             if (schedule.Platform != null)
             {
-                platformStyle =schedule.Platform.Contains("PLATFORM")?"PlatformOverride":"Platform";
+                platformStyle =schedule.isOverridden?"PlatformOverride":"Platform";
+                if (schedule.Platform != "CANCELLED")
+                {
+                    depTime = GetTimeString(schedule.Departure);
+                }
             }
 
             return
@@ -162,7 +169,7 @@ namespace TransitSchedule
                             <div class=""StopTitle"">{schedule.StopTitle} to {schedule.Direction}</div>
                         </td>
                         <td>
-                            <div id=""divDeparture-@alt"" class=""{timeStyle}"" >{GetTimeString(schedule.Departure)}</div>
+                            <div id=""divDeparture-@alt"" class=""{timeStyle}"" >{depTime}</div>
                             <div id=""divDepartureMsg-@alt"" class=""DepartureMessage"">{schedule.DepartureMessage}</div>
                         </td>
                         <td>
@@ -802,7 +809,7 @@ namespace TransitSchedule
                 // sp_PlatformOverride Contains All Of The Linq Above And An Update To Auto-Turn-Off The Platform Override
                 // sp_platformOverride auto-turn-off:
                 // UPDATE PlatformOverride SET Platform = 'As Scheduled'
-                // WHERE[Platform] <> 'As Scheduled'
+                // WHERE[Platform] NOT IN ('As Scheduled', 'CANCELLED')
                 //  AND GETDATE() > OverrideUntil
                 // TODO I'd much prefer to delete the row, but I'm not yet sure what would break
                 results = dc.sp_PlatformOverride().ToList();
