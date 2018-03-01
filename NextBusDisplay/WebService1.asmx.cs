@@ -15,6 +15,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 // For Debug
 using System.Diagnostics;
+using System.Web.Configuration;
 
 namespace TransitSchedule
 {
@@ -201,6 +202,14 @@ namespace TransitSchedule
             // TODO - Add The Special ServiceNoticeID Indicator.
             // Stops Is The "QueryString"
             stops = stops.Replace("stops=", "");
+            if (stops.ToUpper().StartsWith("HTTP") || stops.ToUpper() == "DEFAULT" || stops == "") // If no query string is found, the complete URL is provided.
+            {
+                stops = WebConfigurationManager.AppSettings["DefaultStops"];
+            }
+            if (stops.ToUpper() == "ALL")
+            {
+                stops = "Amtrak-Coaster-Metrolink-Sprinter";
+            }
 
             schedules = new List<Schedule>();
 
@@ -225,11 +234,13 @@ namespace TransitSchedule
                 {
                     // do nothing
                 }
-                else if (routeUpper == "399" | routeUpper ==  "SPRINTER")
+                else if (routeUpper == "399" || routeUpper ==  "SPRINTER")
                 {
+                    route = "399";
+                    stopId = stopId == "" ? "27000" : stopId;
                     schedule = new Schedule();
-                    schedule.Route = routeUpper == "SPRINTER"? "399": route;
-                    schedule.Stop = stopId == ""? "27000": stopId;
+                    schedule.Route = route;
+                    schedule.Stop = stopId;
                     schedule.Agency = "nctd";
                     schedule.Logo = "sprinter-logo.png";
                     // TODO Add Sprinter & Coaster North / Southbound Messages ???? schedule.Direction = "Oceanside" / "San Diego" / "Escondido" -- Not Now Amtrack Only
@@ -275,11 +286,13 @@ namespace TransitSchedule
                         schedules.Add(schedule);
                     }
                 }
-                else if (routeUpper == "398" | routeUpper == "COASTER")
+                else if (routeUpper == "398" || routeUpper == "COASTER")
                 {
+                    route = "398";
+                    stopId = stopId == "" ? "28000" : stopId;
                     schedule = new Schedule();
-                    schedule.Route = routeUpper == "COASTER"? "398": route;
-                    schedule.Stop = stopId == ""? "28000": stopId;
+                    schedule.Route = route;
+                    schedule.Stop = stopId;
                     schedule.RouteType = Schedule.RouteTypes.Coaster;
                     schedule.Agency = "nctd";
                     schedule.Logo = "coaster-logo.png";
