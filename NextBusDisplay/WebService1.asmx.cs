@@ -225,11 +225,11 @@ namespace TransitSchedule
                 {
                     // do nothing
                 }
-                else if (routeUpper == "399")
+                else if (routeUpper == "399" | routeUpper ==  "SPRINTER")
                 {
                     schedule = new Schedule();
-                    schedule.Route = route;
-                    schedule.Stop = stopId;
+                    schedule.Route = routeUpper == "SPRINTER"? "399": route;
+                    schedule.Stop = stopId == ""? "27000": stopId;
                     schedule.Agency = "nctd";
                     schedule.Logo = "sprinter-logo.png";
                     // TODO Add Sprinter & Coaster North / Southbound Messages ???? schedule.Direction = "Oceanside" / "San Diego" / "Escondido" -- Not Now Amtrack Only
@@ -275,11 +275,11 @@ namespace TransitSchedule
                         schedules.Add(schedule);
                     }
                 }
-                else if (routeUpper == "398")
+                else if (routeUpper == "398" | routeUpper == "COASTER")
                 {
                     schedule = new Schedule();
-                    schedule.Route = route;
-                    schedule.Stop = stopId;
+                    schedule.Route = routeUpper == "COASTER"? "398": route;
+                    schedule.Stop = stopId == ""? "28000": stopId;
                     schedule.RouteType = Schedule.RouteTypes.Coaster;
                     schedule.Agency = "nctd";
                     schedule.Logo = "coaster-logo.png";
