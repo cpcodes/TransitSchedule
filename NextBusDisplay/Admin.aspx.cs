@@ -73,8 +73,8 @@ namespace TransitSchedule
                 dl.Items.Add("Platform 1");
                 dl.Items.Add("Platform 2");
                 dl.Items.Add("Platform 3");
-                dl.Items.Add("CANCELLED");
-                //dl.Items.Add("PLATFORM 1");
+                dl.Items.Add("CANCELED");
+                dl.Items.Add("AWW");
                 //dl.Items.Add("PLATFORM 2");
                 //dl.Items.Add("PLATFORM 3");
                 //dl.Items.Add("Platform 3 South");

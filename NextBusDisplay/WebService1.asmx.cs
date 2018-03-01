@@ -64,7 +64,7 @@ namespace TransitSchedule
 #if DEBUG
                     // Uncomment the below line to test the display for specific time of day or day of week/year
                     // The #if statement will prevent this from accidentally carrying over into production if you forget to re-comment
-                    _currentTime = DateTime.Parse("2018-07-04 13:01");
+                    //_currentTime = DateTime.Parse("2018-07-04 13:01");
 #endif
                 }
 
@@ -140,27 +140,27 @@ namespace TransitSchedule
             string depTime="";
             if (schedule.Platform != null)
             {
-                platformStyle =schedule.isOverridden?"PlatformOverride":"Platform";
-                if (schedule.Platform != "CANCELLED")
-                {
-                    depTime = GetTimeString(schedule.Departure);
-                }
+                platformStyle = schedule.isOverridden?"PlatformOverride":"Platform";
+            }
+            if (schedule.Platform != "CANCELED")
+            {
+                depTime = GetTimeString(schedule.Departure);
             }
 
-            return
-            //    $@"<div class=""ScheduleRow"">
-            //        <div>
-            //            <img src=""./Content/Images/{schedule.Logo}"" />
-            //            <span class=""LogoMessage"">&nbsp;{schedule.LogoMessage}</span>
-            //            <div class=""StopTitle"">{schedule.StopTitle} to {schedule.Direction}</div>
-            //        </div>
-            //        <div>
-            //            <div id=""divDeparture-@alt"" class=""{timeStyle}"" >{schedule.Departure}</div>
-            //            <div id=""divDepartureMsg-@alt"" class=""DepartureMessage"">{schedule.DepartureMessage}</div>
-            //        </div>
-            //        <div class=""Platform"">{schedule.Platform}</div>
-            //    </div>";
-            $@"<tr>
+            return (schedule.Platform == "AWW")? "":
+                //    $@"<div class=""ScheduleRow"">
+                //        <div>
+                //            <img src=""./Content/Images/{schedule.Logo}"" />
+                //            <span class=""LogoMessage"">&nbsp;{schedule.LogoMessage}</span>
+                //            <div class=""StopTitle"">{schedule.StopTitle} to {schedule.Direction}</div>
+                //        </div>
+                //        <div>
+                //            <div id=""divDeparture-@alt"" class=""{timeStyle}"" >{schedule.Departure}</div>
+                //            <div id=""divDepartureMsg-@alt"" class=""DepartureMessage"">{schedule.DepartureMessage}</div>
+                //        </div>
+                //        <div class=""Platform"">{schedule.Platform}</div>
+                //    </div>";
+                $@"<tr>
                         <td>                            
                             <div>
                                 <img src=""./Content/Images/{schedule.Logo}"" />
@@ -181,7 +181,7 @@ namespace TransitSchedule
         private List<Schedule> schedules;
 
         // TODO Much prefer represnting time as hours*100 + minutes. Will adjust later
-        private string GetTimeString(string MidnightMinutes)
+        public string GetTimeString(string MidnightMinutes)
         {
             // This is designed for output minutes so that any calculations can be done more easily
             // Get Short Time String From Minutes Since Midnight
@@ -809,7 +809,7 @@ namespace TransitSchedule
                 // sp_PlatformOverride Contains All Of The Linq Above And An Update To Auto-Turn-Off The Platform Override
                 // sp_platformOverride auto-turn-off:
                 // UPDATE PlatformOverride SET Platform = 'As Scheduled'
-                // WHERE[Platform] NOT IN ('As Scheduled', 'CANCELLED')
+                // WHERE[Platform] NOT IN ('As Scheduled', 'CANCELED', 'AWW')
                 //  AND GETDATE() > OverrideUntil
                 // TODO I'd much prefer to delete the row, but I'm not yet sure what would break
                 results = dc.sp_PlatformOverride().ToList();
