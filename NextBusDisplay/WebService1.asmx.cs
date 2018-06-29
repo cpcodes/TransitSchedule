@@ -65,7 +65,7 @@ namespace TransitSchedule
 #if DEBUG
                     // Uncomment the below line to test the display for specific time of day or day of week/year
                     // The #if statement will prevent this from accidentally carrying over into production if you forget to re-comment
-                    //_currentTime = DateTime.Parse("2018-07-04 13:01");
+                    //_currentTime = DateTime.Parse("2018-07-04 04:50");
 #endif
                 }
 
@@ -751,6 +751,10 @@ namespace TransitSchedule
                 days.Add("Fri-Sun");
                 if (route.ToLower() == "398" && holidayName == "Independence Day") days.Add("Saturday"); // Special rule for coaster
                 else days.Add("Sunday");
+            }
+            else if (holidayName == "Independence Day" && (route.ToLower() == "amtrak"))
+            {
+                days.Add("Weekends");
             }
             else if (CurrentTime.DayOfWeek == DayOfWeek.Monday)
             {
