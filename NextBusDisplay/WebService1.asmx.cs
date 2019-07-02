@@ -65,7 +65,7 @@ namespace TransitSchedule
 #if DEBUG
                     // Uncomment the below line to test the display for specific time of day or day of week/year
                     // The #if statement will prevent this from accidentally carrying over into production if you forget to re-comment
-                    //_currentTime = DateTime.Parse("2018-07-04 04:50");
+                    _currentTime = DateTime.Parse("2019-07-04 15:30");
 #endif
                 }
 
@@ -745,18 +745,7 @@ namespace TransitSchedule
 
             dc2.Dispose();
             // Added enumerated days to prepare for auto download from NextBus - Each Day Will Be Enumerated By Itself
-            if (isHoliday && (route.ToLower() != "amtrak"))
-            {
-                days.Add("Weekends");
-                days.Add("Fri-Sun");
-                if (route.ToLower() == "398" && holidayName == "Independence Day") days.Add("Saturday"); // Special rule for coaster
-                else days.Add("Sunday");
-            }
-            else if (holidayName == "Independence Day" && (route.ToLower() == "amtrak"))
-            {
-                days.Add("Weekends");
-            }
-            else if (CurrentTime.DayOfWeek == DayOfWeek.Monday)
+            if (CurrentTime.DayOfWeek == DayOfWeek.Monday)
             {
                 days.Add("Monday");
                 days.Add("Weekdays");
@@ -798,6 +787,97 @@ namespace TransitSchedule
                 days.Add("Weekends");
                 days.Add("Fri-Sun");
             }
+
+            // Set Holidays
+            if (isHoliday && route.ToLower() == "amtrak") // Amtrak
+            {
+                if (holidayName == "Memorial Day"
+                    || holidayName == "Independence Day"
+                    || holidayName == "Labor Day"
+                    )
+                {
+                    days.Clear();
+                    days.Add("Weekends");
+                }
+            }
+            else if (isHoliday && route.ToLower() == "398") // Coaster
+            {
+                if (holidayName == "Martin Luther King Jr. Day" ||
+                    holidayName == "Presidents' Day" ||
+                    holidayName == "Independence Day" ||
+                    holidayName == "Black Friday")
+                {
+                    days.Clear();
+                    days.Add("Weekends");
+                    days.Add("Fri-Sun");
+                    days.Add("Saturday");
+                }
+                else if (holidayName == "New Year's Day" ||
+                    holidayName == "Memorial Day" ||
+                    holidayName == "Labor Day" ||
+                    holidayName == "Thanksgiving Day" ||
+                    holidayName == "Christmas Eve" ||
+                    holidayName == "Christmas Day")
+                {
+                    days.Clear();
+                    days.Add("Weekends");
+                    days.Add("Fri-Sun");
+                    days.Add("Sunday");
+                }
+            }
+            else if (isHoliday && route.ToLower() == "metrolink") // Metrolink
+            {
+                if (holidayName == "New Years Day" ||
+                    holidayName == "Memorial Day" ||
+                    holidayName == "Independence Day" ||
+                    holidayName == "Labor Day" ||
+                    holidayName == "Thanksgiving Day" ||
+                    holidayName == "Christmas Day")
+                {
+                    days.Clear();
+                    days.Add("Sunday");
+                    days.Add("Weekends");
+                    days.Add("Fri-Sun");
+                }
+            }
+            else if (isHoliday && route.ToLower() == "399") // Sprinter
+            {
+                if (//holidayName == "New Years Day"
+                    //|| holidayName == "Martin Luther King Jr. Day"
+                    //|| holidayName == "Presidents' Day"
+                    holidayName == "Memorial Day"
+                    || holidayName == "Independence Day"
+                    || holidayName == "Labor Day"
+                    //|| holidayName == "Thanksgiving Day"
+                    //|| holidayName == "Black Friday"
+                    || holidayName == "Christmas Eve"
+                    //|| holidayName == "Christmas Day"
+                    )
+                {
+                    days.Clear();
+                    days.Add("Saturday");
+                    days.Add("Weekends");
+                    days.Add("Fri-Sun");
+                }
+                else if (holidayName == "New Years Day"
+                    //|| holidayName == "Martin Luther King Jr. Day"
+                    //|| holidayName == "Presidents' Day"
+                    //|| holidayName == "Memorial Day"
+                    //|| holidayName == "Independence Day"
+                    //|| holidayName == "Labor Day"
+                    || holidayName == "Thanksgiving Day"
+                    //|| holidayName == "Black Friday"
+                    //|| holidayName == "Christmas Eve"
+                    || holidayName == "Christmas Day"
+                    )
+                {
+                    days.Clear();
+                    days.Add("Sunday");
+                    days.Add("Weekends");
+                    days.Add("Fri-Sun");
+                }
+            }
+            // Ignoring BREEZE, LIFT, FLEX
 
 #if DEBUG
             // Logs info about what schedule is being displayed
